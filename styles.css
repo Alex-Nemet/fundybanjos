@@ -5,9 +5,9 @@ body {
 
 .hero {
     background-image: url(img/beach_background.jpg);
-    color: white;
-    font-size: larger;
-    padding-top: 200px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding-top: 100px;
     padding-bottom: 200px;
     padding-left: 100px;
     background-size: cover;
