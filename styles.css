@@ -10,4 +10,5 @@ body {
     padding-bottom: 200px;
     padding-left: 100px;
     background-size: cover;
+    background-repeat: no-repeat;
 }
