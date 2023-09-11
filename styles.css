@@ -1,15 +1,33 @@
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     font-family: monospace;
+    background-image: url(img/houstons_beach.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
-.hero {
-    background-image: url(img/houstons_beach.jpg);
+.header {
+    margin-top: 50px;    
+    margin-bottom: 50px;
+    margin-left: 200px;
     color: #957367;
     font-size: 18px;
-    padding-top: 100px;
-    padding-bottom: 200px;
-    padding-left: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
+ 
+}
+
+.main {
+
+    flex-grow: 1;
+    margin-left: 200px;
+}
+
+.footer {
+    /* margin-left: 200px; 
+    display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
