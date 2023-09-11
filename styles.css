@@ -6,10 +6,10 @@ body {
 .hero {
     background-image: url(img/houstons_beach.jpg);
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 100px;
     padding-bottom: 200px;
-    padding-left: 100px;
+    padding-left: 200px;
     background-size: cover;
     background-repeat: no-repeat;
 }
