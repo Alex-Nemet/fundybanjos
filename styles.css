@@ -8,6 +8,7 @@ body {
     background-image: url(img/houstons_beach_background.jpg);
     background-size:cover;
     background-repeat: no-repeat;
+
 }
 
 .logo {
@@ -29,11 +30,29 @@ justify-content: center;
 .main {
 
     flex-grow: 1;
-    font-size: 20px;
     color: #678999;
     text-align: center;
     margin-left: 200px;
     margin-right: 200px;
+    font-size: 20px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 45px;
+    
+}
+
+.social-icon {
+    color: #678999;
+    transition: color 0.2s;
+}
+
+.social-icon:hover {
+    color: #462d05;
 }
 
 .footer {
@@ -42,6 +61,7 @@ justify-content: center;
     color: #462d05;
     font-size:20px;
     padding: 50px;
+    flex-direction: column;
 }
 
 .footertwo {
@@ -49,3 +69,6 @@ justify-content: center;
     flex-direction: column;
     align-items: center;
 }
+ 
+
+
