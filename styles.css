@@ -32,9 +32,9 @@ justify-content: center;
     flex-grow: 1;
     color: #678999;
     text-align: left;
-    margin-left: 200px;
-    margin-right: 200px;
-    font-size: 20pt;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-size: 16pt;
 }
 
 /* Media query for things that happen when the screen is less than 600px wide */
