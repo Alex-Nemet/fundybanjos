@@ -53,15 +53,18 @@ justify-content: center;
     justify-content: center;
     color: #462d05;
     font-size:16pt;
-    padding: 3vh;
+    padding: 2vh;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 .icons {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30pt;
     font-size: 30pt;    
+    padding-top: 10pt;
 }
 
 .social-icon {
