@@ -45,6 +45,10 @@ justify-content: center;
         font-size: 16pt;
         text-align: left;
     }
+    body {
+        background-image: none;
+        background-color: #aed4e6;
+    }
   }
 
 .footer {
