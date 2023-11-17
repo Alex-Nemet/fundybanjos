@@ -34,7 +34,7 @@ justify-content: center;
     text-align: center;
     margin-left: 200px;
     margin-right: 200px;
-    font-size: 20px;
+    font-size: 20pt;
 }
 
 /* Media query for things that happen when the screen is less than 600px wide */
@@ -47,31 +47,30 @@ justify-content: center;
     }
   }
 
+.footer {
+    background-color: #678999;
+    display: flex;
+    justify-content: center;
+    color: #462d05;
+    font-size:16pt;
+    padding: 3vh;
+    flex-direction: column;
+}
+
 .icons {
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 40px;
-    font-size: 45px;
-    
+    font-size: 30pt;    
 }
 
 .social-icon {
-    color: #678999;
+    color: #aed4e6;
     transition: color 0.5s;
 }
 
 .social-icon:hover {
     color: #462d05;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    color: #462d05;
-    font-size:20px;
-    padding: 50px;
-    flex-direction: column;
 }
 
 .footertwo {
