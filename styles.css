@@ -50,12 +50,13 @@ justify-content: center;
         background-color: #d3e4eb;
     }
     .footer {
-        background-color: #678999;
+        background-color: #2d444f;
+        
     }
   }
 
 .footer {
-    background-color: #67899982;
+    background-color: #678999d3;
     display: flex;
     justify-content: center;
     color: #aed4e6;
