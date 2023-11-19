@@ -53,6 +53,10 @@ justify-content: center;
         background-color: #2d444f;
         
     }
+    .responsive-iframe {
+        width: 460px;
+        height: 259px;
+    }
   }
 
 .footer {
