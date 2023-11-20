@@ -17,7 +17,7 @@ body {
 }
 
 .logo {
-    width: 18vw;
+    width: 300px;
     height: auto;
     padding-top: 8vh;
     padding-bottom: 5vh;
@@ -39,7 +39,7 @@ justify-content: center;
     text-align: center;
     margin-left: 250px;
     margin-right: 250px;
-    font-size: 16pt;
+    font-size: 18px;
 }
 
 /* Media query for things that happen when the screen is less than 600px wide */
@@ -47,11 +47,11 @@ justify-content: center;
     .main {
         margin-left: 30px;
         margin-right: 30px;
-        font-size: 14pt;
+        font-size: 14px;
         text-align: left;
     }
     .logo {
-      width: 45vw;
+      width: 200px;
     }
     body {
         background-image: none;
@@ -60,6 +60,9 @@ justify-content: center;
     .footer {
         background-color: #2d444f;
         
+    }
+    .call-to-action {
+      font-size: 10px;
     }
 
   }
@@ -130,7 +133,7 @@ justify-content: center;
 
   .call-to-action {
     color: white;
-    font-size: 2vw;    
+    font-size: 16px;    
     background-color: #6a94a7;
     padding: 10px 18px;
     border-radius: 20rem;
