@@ -17,7 +17,7 @@ body {
 }
 
 .logo {
-    width: 250px;
+    width: 18vw;
     height: auto;
     padding-top: 8vh;
     padding-bottom: 5vh;
@@ -49,6 +49,9 @@ justify-content: center;
         margin-right: 30px;
         font-size: 14pt;
         text-align: left;
+    }
+    .logo {
+      width: 45vw;
     }
     body {
         background-image: none;
@@ -95,11 +98,6 @@ justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-
-
-/* <div style="position: relative; width: 80%; margin: 0 auto; padding-bottom: 56.25%; height: 0; overflow: hidden; box-sizing: border-box;">
-  <iframe src="your-video-url" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
-</div> */
 
 /* iframe container */
 
@@ -149,3 +147,47 @@ justify-content: center;
     background-color: #aed4e6;
     cursor: pointer;
   }
+
+
+  .banjo-gallery {    
+    line-height: 0;       
+     -webkit-column-count: 3;    
+     -webkit-column-gap: 0px;    
+     -moz-column-count: 3;
+     -moz-column-gap: 0px;
+      column-count: 3;    
+      column-gap: 0;
+  }  
+  
+  .banjo-gallery img {    
+    width: 100% !important;    
+    height: auto !important;  
+    padding: 30px;
+  }  
+  .banjo-gallery {    
+    display:inline-block;    
+    margin-right: auto;    
+    margin-left: auto;  
+  } 
+  
+  @media (max-width: 1000px) {
+    .banjo-gallery {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+    }
+   }  
+  @media (max-width: 800px) {
+    .banjo-gallery {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+    }
+   }  
+  @media (max-width: 600px) {
+    .banjo-gallery {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+     column-count:        1;
+    }
+   }
