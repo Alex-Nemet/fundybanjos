@@ -28,26 +28,50 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <header class="header">
-        
-        <img class="logo" src="img/brown_logo.svg" alt="fundy logo svg"/>
+        <div class="brand">
+            <a href="index.html"><img class="logo" src="img/brown_logo.svg" alt="fundy logo svg"/></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="old-faithful-dobson.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="old-faithful-dobson.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     
     </header>
+    <hr>
 
+    <script src="index.js"></script>
+   
     <main class="main">
         
-        <div>
-            <p>Welcome to Fundy Banjos by Alex Nemet, nestled in the scenic Annapolis Valley, Nova Scotia. Dive into the artistry of my handcrafted creations, where I specialize in creating unique, high-end banjos tailored exclusively to your style.
-            
-            <br><br> Every custom creation at Fundy Banjos draws inspiration from the rich and rugged canvas of the bay's landscape. Explore my collection and begin crafting your distinctive musical instrument today with a personalized banjo designed just for you.</p>
+        <div class="container_left">
+            <div>
+                <h1>Handcrafted custom  made banjos</h1>
+                <p>Built by Alex Nemet in the Annapolis Valley, Nova Scotia</p>
+            </div>
            
+            <div class="button">
+            <a class="call-to-action" href="contact.html">Get on the waitlist</a>
+           </div>
+              
         </div>
-       
-        <div class="button">
-        <a class="call-to-action" href="contact.html">Start your musical journey</a>
-       </div>
-          
-        <div class="container">
+  
+        <div class="container_right">
             <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/eZi4lcXVeFU?si=vyhLWlkJEm-ow5Q3&hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
           
@@ -55,38 +79,20 @@
 
     </main>
     
-
-  
- 
     
-    <footer class="footer">
-        
+    <footer class="index_footer">
         <div class="icons">
-            <a class="social-icon" href="https://www.instagram.com/fundybanjos/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a class="social-icon" href="https://www.youtube.com/@fundybanjos" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
-            <a class="social-icon" href = "contact.html" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+            <a class="index_social-icon" href="https://www.instagram.com/fundybanjos/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a class="index_social-icon" href="https://www.youtube.com/@fundybanjos" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a class="index_social-icon" href = "contact.html" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
         </div>
         
       <div class="footertwo">
             <p>Copyright 2023 Alex Nemet</p>
-          <!-- <div>
-                <ul>
-                    <li><a href="contact.html"><b>Contact</b></a></li>
-                </ul>
-          </div>
-           
-            <div>
-                target blank opens link in new tab
-                <a target="_blank" href="https://www.instagram.com/fundybanjos/"><img src="img/instagram-logo.png" height="50px" alt=""></a>
-                
-        
-            </div> -->
          </div>
           
 
     </footer>
-
-
 
 </body>
 
