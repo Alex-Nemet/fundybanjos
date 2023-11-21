@@ -167,7 +167,7 @@ h1 {
     /* background-color: #678999d3; */
     display: flex;
     justify-content: center;
-    color: #aed4e6;
+    color: white;
     font-size:12pt;
     padding: 2vh;
     flex-direction: column;
@@ -184,7 +184,7 @@ h1 {
 }
 
 .social-icon {
-    color: #C4D5DD;
+    color: white;
     transition: color 0.5s;
 }
 
