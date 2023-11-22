@@ -5,7 +5,7 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100svh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: monospace;
@@ -13,7 +13,6 @@ body {
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 .logo {
@@ -71,7 +70,6 @@ ul a:hover {
   color: #462d05;
 } */
 
-
 /* Style Hamburger icon so it doesn't display unless on mobile, and cursor pointer allows  you to click on it */
 #hamburger-icon {
   margin: auto 0;
@@ -121,7 +119,6 @@ ul a:hover {
   height: fit-content;
   width: 100%;
   background-color: #c4d5dd;
-  
 }
 
 /* Media query for things that happen when the screen is less than 600px wide */
@@ -133,7 +130,6 @@ ul a:hover {
       display: block;
   }
 }
-
 
 .main {
     display: flex;
@@ -210,7 +206,6 @@ h1 {
     box-sizing: border-box;
   } */
 
-
 /* Media query for things that happen when the screen is less than 600px wide */
 @media only screen and (max-width: 600px) {
   .logo {
@@ -247,7 +242,6 @@ h1 {
     width: 360px;
     height: 226px;
   }
-
 
     /* .main {
         margin-left: 30px;
@@ -325,12 +319,6 @@ h1 {
     flex-direction: column;
     align-items: center;
 }
-
-
-
-
- 
-
 
   .banjo-gallery {    
     line-height: 0;       
