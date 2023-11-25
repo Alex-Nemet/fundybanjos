@@ -402,13 +402,14 @@ h1 {
       text-align: left;
     }
     .container img {
-      width: 360px;
-      height: 360px;
+      width: 100%;
+      height: auto;
       margin: 10px;
       padding: 20px;
     }
     .text {
       margin: 20px;
+      text-align: center;
     }
 
    }
