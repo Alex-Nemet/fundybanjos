@@ -47,14 +47,15 @@ ul li {
   margin-left: 10px; 
   color: #A9704E;
   list-style-type: none;
+  font-weight: bold;
 }
 
-/* ul li:hover {
+ul li:hover {
   transform: scale(1.1);
   transform-origin: center;
   transition: 0.3s;
 }
- */
+
 ul a:link,
 ul a:visited,
 ul a:active {
@@ -62,7 +63,7 @@ ul a:active {
   color:  #A9704E;
 }
 ul a:hover {
-  color: #462d05;
+  color: #A9704E;
   transition: .3s;
 }
 /* ul a.current
@@ -385,7 +386,7 @@ h1 {
 
     .container img {
     width: fit-content;
-    margin: 100px;
+    margin-left: 100px;
     border-radius: 50%;
 
    }
