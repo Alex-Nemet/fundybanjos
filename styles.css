@@ -335,7 +335,32 @@ h1 {
     padding: 2rem;
     padding-top: 4rem;
     text-align: center;
+    font-style: none;
+    list-style-type: none;
+    color: #c4d5dd;
   }
+
+  .gallery_container a {
+    font-style: none;
+    list-style-type: none;
+    text-decoration: none;
+
+  }
+
+  .gallery_container h1:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+    transition: 0.3s;
+  }
+
+  .gallery_container img:hover {
+    transform: scale(1.03);
+    transform-origin: center;
+    transition: 0.3s;
+  }
+
+
+
   .banjo-gallery img {    
     width: 100% !important;    
     height: auto !important;  
@@ -351,9 +376,7 @@ h1 {
     flex-grow: 1;
     flex-wrap: wrap;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-
+    justify-content: space-evenly;
   }
 
   @media only screen and (max-width: 600px) {
