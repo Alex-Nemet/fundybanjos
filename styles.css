@@ -362,3 +362,53 @@ h1 {
      column-count:        1;
     }
    }
+
+   .container {
+    display: flex;
+    justify-content:space-evenly;
+    text-align: left;
+    flex-grow: 1;
+
+    color: #7E4E32;
+    font-size: 18px;
+   }
+
+   .about {
+    display: flex;
+   }
+
+   .text {
+    background-color: #7BB6DB;
+    margin: 100px ;
+    padding: 20px;
+   }
+
+    .container img {
+    width: 500px;
+    height: 500px;
+    margin: 100px;
+
+   }
+
+   .about_me_right p {
+    margin: 100px;
+    background-color: #7BB6DB;
+    padding: 20px;
+   }
+
+   @media only screen and (max-width: 600px){
+    .container {
+      flex-wrap: wrap;
+      text-align: left;
+    }
+    .container img {
+      width: 360px;
+      height: 360px;
+      margin: 10px;
+      padding: 20px;
+    }
+    .text {
+      margin: 10px;
+    }
+
+   }
