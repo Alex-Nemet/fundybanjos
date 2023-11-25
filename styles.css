@@ -366,9 +366,8 @@ h1 {
    .container {
     display: flex;
     justify-content:space-evenly;
-    text-align: left;
     flex-grow: 1;
-
+    align-items: center;
     color: #7E4E32;
     font-size: 18px;
    }
@@ -380,13 +379,14 @@ h1 {
    .text {
     background-color: #7BB6DB;
     margin: 100px ;
-    padding: 20px;
+    padding: 70px;
+    border-radius: 70px;
    }
 
     .container img {
-    width: 500px;
-    height: 500px;
+    width: fit-content;
     margin: 100px;
+    border-radius: 50%;
 
    }
 
@@ -405,11 +405,15 @@ h1 {
       width: 100%;
       height: auto;
       margin: 10px;
-      padding: 20px;
+      padding: 40px;
+      border-radius: 50%;
     }
     .text {
-      margin: 20px;
-      text-align: center;
+      margin: 40px;
+      margin-top: 10px;
+      text-align: left;
+      border-radius: 70px;
+      padding:40px;
     }
 
    }
