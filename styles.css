@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: monospace;
+    font-family: 'Open Sans', sans-serif;
     background-image: url(img/houstons_beach_background.jpg);
     background-size:cover;
     background-position: center;
