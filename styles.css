@@ -330,11 +330,16 @@ h1 {
       column-count: 3;    
       column-gap: 0;
   }  
-  
+ 
+  .gallery_header {
+    padding: 2rem;
+    padding-top: 4rem;
+    text-align: center;
+  }
   .banjo-gallery img {    
     width: 100% !important;    
     height: auto !important;  
-    padding: 30px;
+    padding: 2rem;
   }  
   .banjo-gallery {    
     display:inline-block;    
