@@ -410,7 +410,10 @@ h1 {
       border-radius: 50%;
     }
     .text {
-      margin: 40px;
+      /* adds some good flexibility to responsiveness - margin inline omits top and bottom */
+      margin-inline: auto;
+      width: 80%;
+      
       margin-top: 10px;
       text-align: left;
       border-radius: 70px;
