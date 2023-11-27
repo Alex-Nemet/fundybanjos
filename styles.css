@@ -351,6 +351,7 @@ h1 {
   h2 { 
     font-family: 'Libre Franklin', sans-serif;  
     color: #7E4E32;
+    font-weight: 500;
   }
 
   .gallery_container h2:hover {
