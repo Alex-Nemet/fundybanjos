@@ -455,6 +455,8 @@ h1 {
     display: flex;
    }
 
+ 
+
    .text {
     background-color: #7BB6DB;
     margin: 100px ;
@@ -517,14 +519,72 @@ h1 {
       background-color: #d3e4eb;
     }
     .contact-container img {
-      width: 100%;
+      width: 250px;
       height: auto;
       margin: 10px;
-      padding-top: 40px;
+   /*    padding-top: 40px;
       padding-left: 40px;
-      padding-right: 40px;
-      border-radius: 50%;
+      padding-right: 40px; */
+      border-radius: 100%;
     }
+    .text {
+      /* adds some good flexibility to responsiveness - margin inline omits top and bottom */
+      margin-inline: auto;
+      width: 80%;
+      
+      margin-top: 10px;
+      text-align: left;
+      border-radius: 40px;
+      padding:40px;
+    }
+
+   }
+
+   .testimonial {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .testimonial-container img {
+    width: 230px;
+    margin-left: 100px;
+    border-radius: 50%;
+
+   }
+
+   .testimonial-container {
+    display: flex;
+    justify-content:space-evenly;
+    flex-grow: 1;
+    align-items: center;
+    color: #7E4E32;
+    font-size: 18px;
+   }
+   
+   .testimonial-text {
+    background-color: #7BB6DB;
+    margin: 30px ;
+    padding: 30px;
+    border-radius: 30px;
+   }
+
+   @media only screen and (max-width: 600px){
+    .testimonial-container {
+      flex-wrap: wrap;
+      text-align: left;
+      background-color: #d3e4eb;
+    }
+    .testimonial-container img {
+      display: none;
+   /*      width: 250px;
+        height: auto;
+        margin: 50px;
+        margin-bottom: 10px;
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 100%; */
+      }
     .text {
       /* adds some good flexibility to responsiveness - margin inline omits top and bottom */
       margin-inline: auto;
