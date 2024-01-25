@@ -434,6 +434,16 @@ h1 {
     font-size: 18px;
    }
 
+   .contact-container {
+    display: flex;
+    justify-content:space-evenly;
+    flex-grow: 1;
+    align-items: center;
+    color: #7E4E32;
+    font-size: 18px;
+    padding-top: 40px;
+   }
+
    .about {
     display: flex;
    }
@@ -452,6 +462,15 @@ h1 {
 
    }
 
+   .contact-container img {
+    width: fit-content;
+    margin-left: 100px;
+    border-radius: 50%;
+
+   }
+
+   
+
    .about_me_right p {
     margin: 100px;
     background-color: #7BB6DB;
@@ -462,12 +481,41 @@ h1 {
     .container {
       flex-wrap: wrap;
       text-align: left;
+      background-color: #d3e4eb;
     }
     .container img {
       width: 100%;
       height: auto;
       margin: 10px;
       padding: 40px;
+      border-radius: 50%;
+    }
+    .text {
+      /* adds some good flexibility to responsiveness - margin inline omits top and bottom */
+      margin-inline: auto;
+      width: 80%;
+      
+      margin-top: 10px;
+      text-align: left;
+      border-radius: 40px;
+      padding:40px;
+    }
+
+   }
+
+   @media only screen and (max-width: 600px){
+    .contact-container {
+      flex-wrap: wrap;
+      text-align: left;
+      background-color: #d3e4eb;
+    }
+    .contact-container img {
+      width: 100%;
+      height: auto;
+      margin: 10px;
+      padding-top: 40px;
+      padding-left: 40px;
+      padding-right: 40px;
       border-radius: 50%;
     }
     .text {

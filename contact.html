@@ -2,23 +2,124 @@
 <html lang="en">
 <head>
      <!-- Google font put on each page-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     
+     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZZTEQN9BP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MZZTEQN9BP');
+    </script>
+
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="contactstyles.css">
+    <meta name="description" content="Custom banjos, handcrafted by Alex Nemet in the Annapolis Valley, NS. Explore the offerings of Fundy Banjos and discover banjos with a soul.">
+    <meta property="og:site_name" content="Fundy Banjos -Custom Banjos"/>
+    <meta property="og:title" content="Fundy Banjos - Custom Banjos"/>
+    <meta property="og:url" content="https://www.fundybanjos.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="Custom banjos, handcrafted by Alex Nemet in the Annapolis Valley, NS. Explore the offerings of Fundy Banjos and discover banjos with a soul."/>
+    <meta property="og:image" content="img/brown_logo.svg"/>
+    <meta property="og:image:alt" content="Fundy Banjos Logo"/>
+    <meta property="og:locale" content="en_US"/>
+    <!-- Add the following line for YouTube -->
+    <meta property="og:video" content="https://www.youtube.com/fundybanjos"/>
+    <!-- Add the following for instagram-->
+    <meta property="og:instagram" content="@fundybanjos"/>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="https://formsubmit.co/fundybanjos@gmail.com" method="POST">
-    <h1>Contact form</h1>
-    <input type="text" name="first" placeholder="First Name" autocomplete="off" required>
-    <input type="text" name="last" placeholder="Last Name" autocomplete="off" required>
-    <input type="email" name="email" placeholder="Email Address" autocomplete="off" required><br>
-    <textarea rows="5" cols="60" name="message" placeholder="Enter Text" autocomplete="off" required></textarea><br>
-    <button type="submit">Send Message</button>
-    </form>
+             <!-- this is a script to add icons from ionic.io -->
+             <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+             <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <header class="header">
+        <div class="brand">
+            <a href="index.html"><img class="logo" src="img/brown_logo.svg" alt="fundy logo svg"/></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    
+    </header>
+    <hr>
+
+    <script src="index.js"></script>
+
+    
+    <section class="about">
+
+        <div class="contact-container">
+
+            <img src="/img/me.jpg" alt="me.jpg">
+                <div class="contact-text">
+
+                    <h1>Get in touch</h1>
+                    <p>
+                       <b>Alex Nemet</b>
+                       <br>
+                       <br>
+                       Annapolis Valley
+                       <br>
+                       Centerville, Nova Scotia
+                       <br>
+                       Canada
+                       <br>
+                       <br>
+                       <b>Phone:</b> 902-209-3567
+                       <br>
+                       <br>
+                       <b>Email:</b> fundybanjos@gmail.com
+
+                    </p>
+                    
+
+                </div>
+    </section>
+
+      
+       
+
+    
+
+    <footer class="footer">
+        
+        <div class="icons">
+            <a class="social-icon" href="https://www.instagram.com/fundybanjos/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a class="social-icon" href="https://www.youtube.com/@fundybanjos" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a class="index_social-icon" href = "contact.html"><ion-icon name="mail-outline"></ion-icon></a>
+        </div>
+        
+      <div class="footertwo">
+            <p>Copyright 2023 Alex Nemet</p>
+         </div>
+          
+
+    </footer>
+    
 </body>
 </html>
