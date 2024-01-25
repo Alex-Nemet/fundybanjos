@@ -442,6 +442,13 @@ h1 {
     color: #7E4E32;
     font-size: 18px;
     padding-top: 40px;
+
+   }
+
+
+   .contact-container a {
+    color: #7E4E32;
+    text-decoration: none;
    }
 
    .about {
