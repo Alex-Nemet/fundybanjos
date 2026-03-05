@@ -333,6 +333,22 @@ h1 {
       column-gap: 0;
   }  
  
+  .back-to-gallery {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .back-to-gallery a {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.95rem;
+    color: #7E4E32;
+    text-decoration: none;
+  }
+
+  .back-to-gallery a:hover {
+    text-decoration: underline;
+  }
+
   .gallery_header {
     padding: 2rem;
     padding-top: 4rem;
