@@ -600,26 +600,27 @@ h1 {
 
    @media only screen and (max-width: 600px){
     .testimonial-container {
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
       text-align: left;
       background-color: #d3e4eb;
     }
     .testimonial-container img {
-      display: none;
-   /*      width: 250px;
-        height: auto;
-        margin: 50px;
-        margin-bottom: 10px;
-        padding-top: 40px;
-        padding-left: 40px;
-        padding-right: 40px;
-        border-radius: 100%; */
-      }
+      display: block;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 12px;
+      order: -1;
+      margin: 1.5rem auto 0;
+    }
+    .testimonial-text {
+      width: 90%;
+      margin: 1rem auto;
+    }
     .text {
-      /* adds some good flexibility to responsiveness - margin inline omits top and bottom */
       margin-inline: auto;
       width: 80%;
-
       margin-top: 10px;
       text-align: left;
       border-radius: 40px;
