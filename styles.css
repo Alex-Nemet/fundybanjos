@@ -357,74 +357,81 @@ h1 {
     list-style-type: none;
   }
 
-  .gallery_container a {
-    font-style: none;
-    list-style-type: none;
-    text-decoration: none;
-
-  }
-
-  h2 { 
-    font-family: 'Libre Franklin', sans-serif;  
+  h2 {
+    font-family: 'Libre Franklin', sans-serif;
     color: #7E4E32;
     font-weight: 500;
   }
 
-  .gallery_container h2:hover {
-    transform: scale(1.1);
-    transform-origin: center;
-    transition: 0.3s;
-  }
-
-  .gallery_container img:hover {
-    transform: scale(1.03);
-    transform-origin: center;
-    transition: 0.3s;
-  }
-
-
-
-  .banjo-gallery img {    
-    width: 100% !important;    
-    height: auto !important;  
-    padding: 2rem;
-  }  
-  .banjo-gallery {    
-    display:inline-block;    
-    margin-right: auto;    
-    margin-left: auto;  
-  } 
-  .gallery_main {
-    display: flex;
-    flex-grow: 1;
-    flex-wrap: wrap;
+  .gallery-intro-text {
+    max-width: 700px;
+    margin: 2rem auto 0;
+    padding: 0 2rem;
     text-align: center;
-    justify-content: space-evenly;
+    font-family: 'Libre Baskerville', serif;
+    color: #7E4E32;
+    font-size: 1rem;
+  }
+
+  .gallery_main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 2rem;
   }
 
   .gallery_container {
-    margin: 2rem;
+    display: block;
+    text-decoration: none;
+    background: #faf8f5;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .gallery_container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
   }
 
   .gallery_container img {
-    width: 400px;
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
   }
 
-  @media only screen and (max-width: 600px) {
+  .gallery_container h2 {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 800px) {
     .gallery_main {
-      justify-content: center;
+      grid-template-columns: repeat(2, 1fr);
     }
-    .gallery_container {
-      width: 100%;
-      margin: 1rem 0;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .gallery_main {
+      grid-template-columns: 1fr;
     }
-    .gallery_container img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      padding-inline: 2rem;
-      box-sizing: border-box;
-    }
+  }
+
+  .banjo-gallery img {
+    width: 100% !important;
+    height: auto !important;
+    padding: 2rem;
+  }
+  .banjo-gallery {
+    display:inline-block;
+    margin-right: auto;
+    margin-left: auto;
   }
   @media (max-width: 1000px) {
     .banjo-gallery {
