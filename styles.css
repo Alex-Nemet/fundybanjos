@@ -386,22 +386,29 @@ h1 {
     justify-content: space-evenly;
   }
 
-  @media only screen and (max-width: 600px) {
-    .gallery_container img {
-      width: 100%;
-      height: auto;
-      padding-inline: 2rem;
-      margin: 10px;
-    }
-  }
-
   .gallery_container {
     margin: 2rem;
   }
 
   .gallery_container img {
     width: 400px;
+  }
 
+  @media only screen and (max-width: 600px) {
+    .gallery_main {
+      justify-content: center;
+    }
+    .gallery_container {
+      width: 100%;
+      margin: 1rem 0;
+    }
+    .gallery_container img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      padding-inline: 2rem;
+      box-sizing: border-box;
+    }
   }
   @media (max-width: 1000px) {
     .banjo-gallery {
