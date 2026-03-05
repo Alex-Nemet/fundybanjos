@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=Yeseva+One&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -146,7 +148,7 @@ ul a:hover {
 
 h1 {
   font-size: 35px;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Fraunces', serif;
   color: #7E4E32;
   padding-bottom: 10px;
 }
@@ -355,10 +357,11 @@ h1 {
     text-align: center;
     font-style: none;
     list-style-type: none;
+    font-family: 'Fraunces', serif;
   }
 
   h2 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Fraunces', serif;
     color: #7E4E32;
     font-weight: 500;
   }
