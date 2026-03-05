@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
     prevBtn.innerHTML = '&#8592;';
     prevBtn.setAttribute('aria-label', 'Previous image');
 
+    var imgWrap = document.createElement('div');
+    imgWrap.id = 'lightbox-img-wrap';
+
     var img = document.createElement('img');
     img.id = 'lightbox-img';
 
@@ -26,9 +29,11 @@ document.addEventListener('DOMContentLoaded', function () {
     closeBtn.innerHTML = '&times;';
     closeBtn.setAttribute('aria-label', 'Close');
 
+    imgWrap.appendChild(img);
+
     overlay.appendChild(closeBtn);
     overlay.appendChild(prevBtn);
-    overlay.appendChild(img);
+    overlay.appendChild(imgWrap);
     overlay.appendChild(nextBtn);
     document.body.appendChild(overlay);
 
