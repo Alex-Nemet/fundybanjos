@@ -160,7 +160,8 @@ h1 {
 
 .call-to-action {
   color: #7E4E32;
-  font-size: 20px;    
+  font-size: 20px;
+  font-family: 'Fraunces', serif;
   font-weight: bold;
   background-color: #7BB6DB;
   padding: 15px 40px;
@@ -594,6 +595,10 @@ h1 {
     font-size: 18px;
    }
    
+   .testimonial-text h3 {
+    font-family: 'Fraunces', serif;
+   }
+
    .testimonial-text {
     background-color: #7BB6DB;
     margin: 30px ;
