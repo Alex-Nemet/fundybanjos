@@ -589,7 +589,7 @@ h1 {
       /* adds some good flexibility to responsiveness - margin inline omits top and bottom */
       margin-inline: auto;
       width: 80%;
-      
+
       margin-top: 10px;
       text-align: left;
       border-radius: 40px;
@@ -597,3 +597,64 @@ h1 {
     }
 
    }
+
+/* Lightbox */
+#lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+#lightbox-overlay.active {
+    display: flex;
+}
+
+#lightbox-img {
+    max-width: 90vw;
+    max-height: 88vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.5);
+    user-select: none;
+}
+
+#lightbox-prev,
+#lightbox-next {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+    user-select: none;
+    flex-shrink: 0;
+}
+
+#lightbox-prev:hover,
+#lightbox-next:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#lightbox-prev { margin-right: 1.5rem; }
+#lightbox-next { margin-left: 1.5rem; }
+
+#lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+
+#lightbox-close:hover { color: #ccc; }
