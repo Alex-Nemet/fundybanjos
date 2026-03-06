@@ -94,7 +94,7 @@ Tone ring: Rosewood
 Head: Renaissance
 
 **Right column**
-Headstock: TBD (researching original shape)
+Headstock: TBD
 Tuners: Rickard 10:1
 Tailpiece: No-Knot
 Hardware: Brass Rickard
