@@ -390,7 +390,7 @@ h1 {
   .gallery_container {
     display: block;
     text-decoration: none;
-    background: #faf8f5;
+    background: rgba(123, 182, 219, 0.82);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 12px rgba(0,0,0,0.1);
