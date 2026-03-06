@@ -90,12 +90,12 @@ Neck: Maple
 Scale: 25.5"
 Fingerboard: Ebony
 Scoop: S-Swoop Ogee
-Tone ring: ¼" Rolled Brass
+Tone ring: Rosewood
 Head: Renaissance
 
 **Right column**
 Headstock: TBD (researching original shape)
-Tuners: Gotoh
+Tuners: Rickard 10:1
 Tailpiece: No-Knot
 Hardware: Brass Rickard
 Inlay: Mother of Pearl
