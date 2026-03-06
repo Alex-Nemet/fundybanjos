@@ -134,6 +134,10 @@ ul a:hover {
   #hamburger-icon {
       display: block;
   }
+  body {
+      background-image: none;
+      background-color: #d3e4eb;
+  }
 }
 
 .main {
@@ -549,6 +553,12 @@ h1 {
     margin: 0;
     font-size: 0.9rem;
     color: #333;
+  }
+
+  @media (max-width: 699px) {
+    .banjo-specs dl {
+      grid-template-columns: 7rem 1fr;
+    }
   }
 
   @media (max-width: 800px) {
