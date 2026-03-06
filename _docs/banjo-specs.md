@@ -134,3 +134,29 @@ Strings: Nylgut
 Hardware: Brass Rickard
 Inlay:
 Finish: Oil Varnish
+
+---
+
+## The Raven Banjo
+Year:
+
+One-line description:
+
+**Left column**
+Rim: 12" Maple
+Neck: Maple
+Scale: 25.5"
+Fingerboard: Ebony
+Scoop: 
+Heel: Dobson
+Tone ring: Rosewood
+Head: Renaissance
+
+**Right column**
+Headstock: Paddle
+Tuners:Gotoh
+Tailpiece:no knot
+Strings: Nylgut
+Hardware:brass
+Inlay: Brass Raven
+Finish:oil varnish
