@@ -7,7 +7,7 @@ Two-column layout:
 
 ---
 
-## 12" Walnut Moon
+## Walnut Moon
 Year: 2025
 
 One-line description:
@@ -31,7 +31,7 @@ Finish: Oil Varnish
 
 ---
 
-## 12" Left-Handed Maple
+## Left-Handed Seeger
 Year: 2025
 
 One-line description:
