@@ -134,6 +134,9 @@ ul a:hover {
   #hamburger-icon {
       display: block;
   }
+  body {
+      background-attachment: scroll;
+  }
 }
 
 .main {
