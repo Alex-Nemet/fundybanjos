@@ -1,8 +1,8 @@
 # Banjo Specs
 
 Two-column layout:
-- Left column: Rim, Neck, Scale, Fingerboard, Scoop, Tone ring, Head
-- Right column: Headstock, Tuners, Tailpiece, Hardware, Inlay, Finish
+- Left column: Rim, Neck, Scale, Fingerboard, Scoop, Heel, Tone ring, Head
+- Right column: Headstock, Tuners, Tailpiece, Strings, Hardware, Inlay, Finish
 (omit any blank fields — year is stored here for reference but not displayed on site yet)
 
 ---
@@ -18,6 +18,7 @@ Neck: Walnut
 Scale: 25.5"
 Fingerboard: Ebony
 Scoop: Arched
+Heel: Dobson
 Tone ring: Wooden Sapele
 Head: Renaissance
 
@@ -25,6 +26,7 @@ Head: Renaissance
 Headstock: Old Regal
 Tuners: Gotoh
 Tailpiece: No-Knot
+Strings: Steel
 Hardware: Brass Rickard
 Inlay: Yellowheart
 Finish: Oil Varnish
@@ -42,6 +44,7 @@ Neck: Maple
 Scale: 25.5"
 Fingerboard: Ebony
 Scoop: S-Swoop Ogee
+Heel: Dobson
 Tone ring: Wooden Sapele
 Head: Renaissance
 
@@ -49,6 +52,7 @@ Head: Renaissance
 Headstock: Seeger #2
 Tuners: Gotoh
 Tailpiece: No-Knot
+Strings: Steel
 Hardware: Brass Rickard
 Inlay:
 Finish: Oil Varnish
@@ -66,6 +70,7 @@ Neck: Maple
 Scale: 25.5"
 Fingerboard: Ebony
 Scoop: Straight
+Heel: Dobson
 Tone ring: Dobson
 Head: Renaissance
 
@@ -73,6 +78,7 @@ Head: Renaissance
 Headstock: Paddle
 Tuners: Rickard 10:1
 Tailpiece: No-Knot
+Strings: Steel
 Hardware: Brass
 Inlay:
 Finish: Oil Varnish
@@ -90,6 +96,7 @@ Neck: Maple
 Scale: 25.5"
 Fingerboard: Ebony
 Scoop: S-Swoop Ogee
+Heel: Vega
 Tone ring: Rosewood
 Head: Renaissance
 
@@ -97,6 +104,7 @@ Head: Renaissance
 Headstock: TBD
 Tuners: Rickard 10:1
 Tailpiece: No-Knot
+Strings: Steel
 Hardware: Brass Rickard
 Inlay: Mother of Pearl
 Finish: Oil Varnish
@@ -114,6 +122,7 @@ Neck: Douglas Fir
 Scale: 21"
 Fingerboard: Yew
 Scoop: Partial (thumb only)
+Heel: Vega
 Tone ring: ¼" Rolled Brass
 Head: Renaissance
 
@@ -121,6 +130,7 @@ Head: Renaissance
 Headstock: Seeger #1
 Tuners: Gotoh
 Tailpiece: No-Knot
+Strings: Nylgut
 Hardware: Brass Rickard
 Inlay:
 Finish: Oil Varnish
