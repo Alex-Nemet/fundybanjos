@@ -180,6 +180,22 @@ h1 {
   cursor: pointer;
 }
 
+.call-to-action-secondary {
+  color: #7E4E32;
+  font-size: 16px;
+  font-family: 'Fraunces', serif;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(126, 78, 50, 0.4);
+  transition: border-color 0.3s;
+}
+
+.call-to-action-secondary:hover {
+  border-color: #7E4E32;
+  cursor: pointer;
+}
+
 /* main page left and right containers */
 .container_left {
   display: flex;
@@ -390,7 +406,7 @@ h1 {
   .gallery_container {
     display: block;
     text-decoration: none;
-    background: #faf8f5;
+    background: rgba(123, 182, 219, 0.82);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 12px rgba(0,0,0,0.1);
