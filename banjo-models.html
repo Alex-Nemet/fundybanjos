@@ -78,10 +78,10 @@
     <div class="models-grid">
 
         <!-- Driftwood -->
-        <div class="model-card">
-            <a href="driftwood-banjo.html"><img src="img/old-faithful/old-faithful.jpg" alt="Fundy Banjos Driftwood tackhead banjo"/></a>
+        <div class="model-card" data-href="driftwood-banjo.html">
+            <img src="img/old-faithful/old-faithful.jpg" alt="Fundy Banjos Driftwood tackhead banjo"/>
             <div class="model-card-body">
-                <h2><a href="driftwood-banjo.html" style="text-decoration:none;color:inherit;">Driftwood</a></h2>
+                <h2>Driftwood</h2>
                 <p class="model-tagline">A traditional tackhead banjo built to modern playability standards. Skin head, simplified construction, and a warm old-time sound.</p>
                 <ul class="model-specs">
                     <li><span>Type</span> Tackhead open-back banjo</li>
@@ -99,10 +99,10 @@
         </div>
 
         <!-- Tidal -->
-        <div class="model-card">
-            <a href="tidal-banjo.html"><img src="img/walnut-moon/walnut-moon-5.jpg" alt="Fundy Banjos Tidal open-back banjo"/></a>
+        <div class="model-card" data-href="tidal-banjo.html">
+            <img src="img/walnut-moon/walnut-moon-5.jpg" alt="Fundy Banjos Tidal open-back banjo"/>
             <div class="model-card-body">
-                <h2><a href="tidal-banjo.html" style="text-decoration:none;color:inherit;">Tidal</a></h2>
+                <h2>Tidal</h2>
                 <p class="model-tagline">A modern open-back banjo built for clawhammer and old-time playing. Designed around a 25.5″ scale with 11″ or 12″ rims, emphasizing balance, clarity, and consistent playability.</p>
                 <ul class="model-specs">
                     <li><span>Type</span> Open-back banjo</li>
@@ -120,10 +120,10 @@
         </div>
 
         <!-- Bespoke -->
-        <div class="model-card">
-            <a href="bespoke-banjo.html"><img src="img/left-handed/bens-banjo-22.jpg" alt="Fundy Banjos bespoke custom banjo"/></a>
+        <div class="model-card" data-href="bespoke-banjo.html">
+            <img src="img/left-handed/bens-banjo-22.jpg" alt="Fundy Banjos bespoke custom banjo"/>
             <div class="model-card-body">
-                <h2><a href="bespoke-banjo.html" style="text-decoration:none;color:inherit;">Bespoke</a></h2>
+                <h2>Bespoke</h2>
                 <p class="model-tagline">Fully custom instruments developed individually with players. A one-off approach allowing exploration of materials, design, and sound.</p>
                 <ul class="model-specs">
                     <li><span>Type</span> Fully custom, one-off build</li>
@@ -141,6 +141,16 @@
         </div>
 
     </div>
+
+    <script>
+        document.querySelectorAll('.model-card[data-href]').forEach(function (card) {
+            card.addEventListener('click', function (e) {
+                if (!e.target.closest('.model-cta')) {
+                    window.location.href = card.dataset.href;
+                }
+            });
+        });
+    </script>
 
     <footer class="footer">
         <div class="icons">
