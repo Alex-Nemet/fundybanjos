@@ -1,8 +1,8 @@
 # Banjo Specs
 
 Two-column layout:
-- Left column: Rim, Neck, Scale, Fingerboard, Scoop, Heel, Tone ring, Head
-- Right column: Headstock, Tuners, Tailpiece, Strings, Hardware, Inlay, Finish
+- Left column: Rim, Neck, Scale, Fingerboard, Scoop, Scoop plate, Heel, Tone ring, Head
+- Right column: Headstock, Tuners, Tailpiece, Strings, Hardware, Inlay, Inlay dots, Finish
 (omit any blank fields — year is stored here for reference but not displayed on site yet)
 
 ---
@@ -133,12 +133,41 @@ Tailpiece: No-Knot
 Strings: Nylgut
 Hardware: Brass Rickard
 Inlay:
+Inlay dots:
+Finish: Oil Varnish
+
+---
+
+## The Hokusai
+Year: 2025
+
+One-line description:
+
+**Left column**
+Rim: 12" Walnut
+Neck: Walnut
+Scale: 26.25"
+Fingerboard: Ebony
+Scoop: S-Swoop Ogee
+Scoop plate: Brass Etched
+Heel: Dobson
+Tone ring: Wooden Sapele
+Head: Renaissance
+
+**Right column**
+Headstock: RA Sanders
+Tuners: Rickard 10:1
+Tailpiece: No-Knot
+Strings: Steel
+Hardware: Brass
+Inlay:
+Inlay dots: Brass Lined Walnut
 Finish: Oil Varnish
 
 ---
 
 ## The Raven Banjo
-Year:
+Year: 2025
 
 One-line description:
 
