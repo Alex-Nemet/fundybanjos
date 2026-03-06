@@ -405,7 +405,7 @@ h1 {
 
   .gallery_container img {
     width: 100%;
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/4;
     object-fit: cover;
     display: block;
   }
