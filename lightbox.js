@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var images = Array.from(document.querySelectorAll('.banjo-gallery img'));
+    var images = Array.from(document.querySelectorAll('.banjo-gallery img, .product-hero-img img, .product-gallery img'));
     if (images.length === 0) return;
 
     var currentIndex = 0;
