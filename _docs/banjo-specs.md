@@ -2,7 +2,7 @@
 
 Two-column layout:
 - Left column: Rim, Neck, Scale, Fingerboard, Scoop, Scoop plate, Heel, Tone ring, Head
-- Right column: Headstock, Tuners, Tailpiece, Strings, Hardware, Inlay, Inlay dots, Finish
+- Right column: Headstock, Tuners, Tailpiece, Strings, Hardware, Inlay, Side dots, Finish
 (omit any blank fields — year is stored here for reference but not displayed on site yet)
 
 ---
@@ -183,9 +183,10 @@ Head: Renaissance
 
 **Right column**
 Headstock: Paddle
-Tuners:Gotoh
-Tailpiece:no knot
+Tuners: Gotoh
+Tailpiece: No-Knot
 Strings: Nylgut
-Hardware:brass
+Hardware: Brass
 Inlay: Brass Raven
-Finish:oil varnish
+Side dots: Brass
+Finish: Oil Varnish
