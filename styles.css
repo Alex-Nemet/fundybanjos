@@ -980,6 +980,50 @@ h1 {
     }
 }
 
+/* Tidal / High Tide comparison */
+.model-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.comparison-col {
+    border: 1px solid rgba(126, 78, 50, 0.2);
+    border-radius: 8px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: #faf7f4;
+}
+
+.comparison-col--high-tide {
+    background: #ddeadc;
+    border-color: rgba(70, 110, 70, 0.35);
+}
+
+.comparison-name {
+    font-family: 'Fraunces', serif;
+    color: #7E4E32;
+    margin: 0 0 0.25rem;
+    font-size: 1.15rem;
+}
+
+.comparison-desc {
+    font-size: 0.85rem;
+    color: #4a3020;
+    font-style: italic;
+    margin: 0 0 0.25rem;
+    min-height: 2.8rem;
+}
+
+@media (max-width: 600px) {
+    .model-comparison {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Lightbox */
 #lightbox-overlay {
     display: none;
