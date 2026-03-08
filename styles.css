@@ -846,8 +846,11 @@ h1 {
 
   .model-specs li span {
     font-weight: 600;
-    min-width: 80px;
+    min-width: 110px;
     color: #7E4E32;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
   }
 
   .model-bottom {
@@ -1122,7 +1125,7 @@ h1 {
     color: #4a3020;
     font-style: italic;
     margin: 0 0 0.25rem;
-    min-height: 2.8rem;
+    min-height: 4.5rem;
 }
 
 @media (max-width: 600px) {
