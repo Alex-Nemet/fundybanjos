@@ -30,6 +30,26 @@
     <meta property="og:image" content="https://www.fundybanjos.com/img/brown_logo.svg"/>
     <meta property="og:image:alt" content="Fundy Banjos Logo"/>
     <meta property="og:locale" content="en_CA"/>
+    <!-- Structured data: LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Fundy Banjos",
+      "description": "Custom handcrafted open-back banjos for clawhammer and old-time music, built by Alex Nemet in the Annapolis Valley, Nova Scotia, Canada.",
+      "url": "https://www.fundybanjos.com",
+      "areaServed": "Canada",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Nova Scotia",
+        "addressCountry": "CA"
+      },
+      "sameAs": [
+        "https://www.instagram.com/fundybanjos/",
+        "https://www.youtube.com/@fundybanjos"
+      ]
+    }
+    </script>
 </head>
 <body>
              <!-- this is a script to add icons from ionic.io -->
@@ -69,40 +89,71 @@
     <hr>
 
     <script src="index.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var form = document.querySelector('.contact-form');
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            }).then(function (response) {
+                if (response.ok) {
+                    window.location.href = 'https://www.fundybanjos.com/thank-you.html';
+                } else {
+                    alert('Something went wrong. Please try again or email fundybanjos@gmail.com directly.');
+                }
+            }).catch(function () {
+                alert('Something went wrong. Please try again or email fundybanjos@gmail.com directly.');
+            });
+        });
+    });
+    </script>
 
     
-    <h1 class="gallery_header">Inquire About a Banjo</h1>
+    <h1 class="gallery_header">Get in Touch</h1>
 
-    <div class="gallery-intro-text">
-        <p>Whether you're interested in a custom build or one of my standard models, reach out to start the conversation.</p>
-    </div>
+    <div class="contact-layout">
 
-    <section class="about">
-
-        <div class="contact-container">
-
+        <div class="contact-info">
             <img src="img/me.jpg" alt="Alex Nemet, banjo builder at Fundy Banjos">
-                <div class="contact-text">
-                    <p>
-                       <b>Alex Nemet</b>
-                       <br>
-                       <br>
-                       Annapolis Valley
-                       <br>
-                       Steam Mill, Nova Scotia
-                       <br>
-                       Canada
-                       <br>
-                       <br>
-                       <b>Phone:</b> 902-209-3567
-                       <br>
-                       <br>
-                       <b>Email:</b> <a href = "mailto: fundybanjos@gmail.com">fundybanjos@gmail.com</a>
-                    </p>
-                    
+            <p>
+                <b>Alex Nemet</b>
+                <br><br>
+                Annapolis Valley<br>
+                Steam Mill, Nova Scotia<br>
+                Canada
+                <br><br>
+                <b>Phone:</b> 902-209-3567
+                <br><br>
+                <b>Email:</b> <a href="mailto:fundybanjos@gmail.com">fundybanjos@gmail.com</a>
+            </p>
+        </div>
 
+        <div class="contact-form-wrapper">
+            <form action="https://formspree.io/f/xnjgjnbb" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-    </section>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="referral">How did you hear about Fundy Banjos? <span class="form-optional">(optional)</span></label>
+                    <input type="text" id="referral" name="referral">
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+    </div>
 
       
        
