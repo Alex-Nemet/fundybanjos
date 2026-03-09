@@ -89,38 +89,48 @@
     <script src="index.js"></script>
 
     
-    <h1 class="gallery_header">Inquire About a Banjo</h1>
+    <h1 class="gallery_header">Get in Touch</h1>
 
-    <div class="gallery-intro-text">
-        <p>Whether you're interested in a custom build or one of my standard models, reach out to start the conversation.</p>
-    </div>
+    <div class="contact-layout">
 
-    <section class="about">
-
-        <div class="contact-container">
-
+        <div class="contact-info">
             <img src="img/me.jpg" alt="Alex Nemet, banjo builder at Fundy Banjos">
-                <div class="contact-text">
-                    <p>
-                       <b>Alex Nemet</b>
-                       <br>
-                       <br>
-                       Annapolis Valley
-                       <br>
-                       Steam Mill, Nova Scotia
-                       <br>
-                       Canada
-                       <br>
-                       <br>
-                       <b>Phone:</b> 902-209-3567
-                       <br>
-                       <br>
-                       <b>Email:</b> <a href = "mailto: fundybanjos@gmail.com">fundybanjos@gmail.com</a>
-                    </p>
-                    
+            <p>
+                <b>Alex Nemet</b>
+                <br><br>
+                Annapolis Valley<br>
+                Steam Mill, Nova Scotia<br>
+                Canada
+                <br><br>
+                <b>Phone:</b> 902-209-3567
+                <br><br>
+                <b>Email:</b> <a href="mailto:fundybanjos@gmail.com">fundybanjos@gmail.com</a>
+            </p>
+        </div>
 
+        <div class="contact-form-wrapper">
+            <form action="https://formspree.io/f/xnjgjnbb" method="POST" class="contact-form" data-redirect="https://www.fundybanjos.com/thank-you.html">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-    </section>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="referral">How did you hear about Fundy Banjos? <span class="form-optional">(optional)</span></label>
+                    <input type="text" id="referral" name="referral">
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+    </div>
 
       
        
