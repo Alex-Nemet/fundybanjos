@@ -620,7 +620,7 @@ h1 {
     background-color: rgba(123, 182, 219, 0.82);
     margin: 60px;
     padding: 40px;
-    border-radius: 30px;
+    border-radius: 16px;
    }
 
    .about {
@@ -633,13 +633,16 @@ h1 {
     background-color: rgba(123, 182, 219, 0.82);
     margin: 100px ;
     padding: 40px;
-    border-radius: 30px;
+    border-radius: 16px;
    }
 
-    .container img {
-    width: fit-content;
+   .container img {
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
     margin-left: 100px;
-    border-radius: 50%;
+    border-radius: 16px;
+    flex-shrink: 0;
 
    }
 
@@ -675,10 +678,10 @@ h1 {
       /* adds some good flexibility to responsiveness - margin inline omits top and bottom */
       margin-inline: auto;
       width: 80%;
-      
+
       margin-top: 10px;
       text-align: left;
-      border-radius: 40px;
+      border-radius: 16px;
       padding:40px;
     }
 
@@ -701,7 +704,7 @@ h1 {
       width: 80%;
       margin-top: 10px;
       text-align: left;
-      border-radius: 40px;
+      border-radius: 16px;
       padding:40px;
     }
     .contact-layout {
@@ -734,7 +737,7 @@ h1 {
 
   .contact-layout {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 3rem;
     max-width: 1000px;
     margin: 2rem auto 4rem;
@@ -754,6 +757,7 @@ h1 {
     background-color: rgba(211, 228, 235, 0.85);
     padding: 1.5rem;
     border-radius: 16px;
+    justify-content: center;
   }
 
   .contact-info img {
@@ -772,12 +776,18 @@ h1 {
 
   .contact-form-wrapper {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form-wrapper .contact-form {
+    flex: 1;
   }
 
   .contact-form {
     background-color: rgba(123, 182, 219, 0.82);
     padding: 2.5rem;
-    border-radius: 30px;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
@@ -869,7 +879,7 @@ h1 {
     background-color: rgba(123, 182, 219, 0.82);
     margin: 30px ;
     padding: 30px;
-    border-radius: 30px;
+    border-radius: 16px;
    }
 
    @media only screen and (max-width: 600px){
@@ -897,7 +907,7 @@ h1 {
       width: 80%;
       margin-top: 10px;
       text-align: left;
-      border-radius: 40px;
+      border-radius: 16px;
       padding:40px;
     }
 

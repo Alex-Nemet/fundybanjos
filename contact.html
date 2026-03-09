@@ -89,6 +89,43 @@
     <script src="index.js"></script>
     <script>
     document.addEventListener('DOMContentLoaded', function () {
+        var photo = document.querySelector('.contact-info img');
+        if (!photo) return;
+
+        var overlay = document.createElement('div');
+        overlay.id = 'lightbox-overlay';
+        var closeBtn = document.createElement('button');
+        closeBtn.id = 'lightbox-close';
+        closeBtn.innerHTML = '&times;';
+        closeBtn.setAttribute('aria-label', 'Close');
+        var imgWrap = document.createElement('div');
+        imgWrap.id = 'lightbox-img-wrap';
+        var lbImg = document.createElement('img');
+        lbImg.id = 'lightbox-img';
+        imgWrap.appendChild(lbImg);
+        overlay.appendChild(closeBtn);
+        overlay.appendChild(imgWrap);
+        document.body.appendChild(overlay);
+
+        function openLightbox() {
+            lbImg.src = photo.src;
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        photo.style.cursor = 'pointer';
+        photo.addEventListener('click', openLightbox);
+        closeBtn.addEventListener('click', function (e) { e.stopPropagation(); closeLightbox(); });
+        overlay.addEventListener('click', function (e) { if (e.target === overlay) closeLightbox(); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLightbox(); });
+    });
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
         var form = document.querySelector('.contact-form');
         form.addEventListener('submit', function (e) {
             e.preventDefault();
