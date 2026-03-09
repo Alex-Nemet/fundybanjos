@@ -12,7 +12,7 @@ body {
     padding: 0;
    /*  font-family: 'Libre Baskerville', serif; */
     font-family: 'Libre Franklin', sans-serif;
-    background-image: url(img/houstons_beach_background.jpg);
+    background-image: url(img/houstons_beach_background.webp);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -751,10 +751,13 @@ h1 {
     font-size: 1rem;
     color: #7E4E32;
     line-height: 1.6;
+    background-color: rgba(211, 228, 235, 0.85);
+    padding: 1.5rem;
+    border-radius: 16px;
   }
 
   .contact-info img {
-    width: 180px;
+    width: 220px;
     border-radius: 50%;
   }
 
