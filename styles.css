@@ -637,11 +637,11 @@ h1 {
    }
 
    .container img {
-    width: 360px;
-    height: 360px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     margin-left: 100px;
-    border-radius: 16px;
+    border-radius: 50%;
     flex-shrink: 0;
 
    }
