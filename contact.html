@@ -87,6 +87,27 @@
     <hr>
 
     <script src="index.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var form = document.querySelector('.contact-form');
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            }).then(function (response) {
+                if (response.ok) {
+                    window.location.href = 'https://www.fundybanjos.com/thank-you.html';
+                } else {
+                    alert('Something went wrong. Please try again or email fundybanjos@gmail.com directly.');
+                }
+            }).catch(function () {
+                alert('Something went wrong. Please try again or email fundybanjos@gmail.com directly.');
+            });
+        });
+    });
+    </script>
 
     
     <h1 class="gallery_header">Get in Touch</h1>
@@ -110,7 +131,6 @@
 
         <div class="contact-form-wrapper">
             <form action="https://formspree.io/f/xnjgjnbb" method="POST" class="contact-form">
-                <input type="hidden" name="_next" value="https://www.fundybanjos.com/thank-you.html">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
