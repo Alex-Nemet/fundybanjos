@@ -920,7 +920,7 @@ h1 {
   .models-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 3rem;
     max-width: 1200px;
     margin: 2rem auto 4rem;
     padding: 0 2rem;
