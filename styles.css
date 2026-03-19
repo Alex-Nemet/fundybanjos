@@ -12,7 +12,7 @@ body {
     padding: 0;
    /*  font-family: 'Libre Baskerville', serif; */
     font-family: 'Libre Franklin', sans-serif;
-    background-image: url(img/houstons_beach_background.jpg);
+    background-image: url(img/houstons_beach_background.webp);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -636,7 +636,7 @@ h1 {
     background-color: rgba(123, 182, 219, 0.82);
     margin: 60px;
     padding: 40px;
-    border-radius: 30px;
+    border-radius: 16px;
    }
 
    .about {
@@ -649,13 +649,16 @@ h1 {
     background-color: rgba(123, 182, 219, 0.82);
     margin: 100px ;
     padding: 40px;
-    border-radius: 30px;
+    border-radius: 16px;
    }
 
-    .container img {
-    width: fit-content;
+   .container img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
     margin-left: 100px;
     border-radius: 50%;
+    flex-shrink: 0;
 
    }
 
@@ -691,10 +694,10 @@ h1 {
       /* adds some good flexibility to responsiveness - margin inline omits top and bottom */
       margin-inline: auto;
       width: 80%;
-      
+
       margin-top: 10px;
       text-align: left;
-      border-radius: 40px;
+      border-radius: 16px;
       padding:40px;
     }
 
@@ -717,7 +720,7 @@ h1 {
       width: 80%;
       margin-top: 10px;
       text-align: left;
-      border-radius: 40px;
+      border-radius: 16px;
       padding:40px;
     }
     .contact-layout {
@@ -750,7 +753,7 @@ h1 {
 
   .contact-layout {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 3rem;
     max-width: 1000px;
     margin: 2rem auto 4rem;
@@ -767,10 +770,14 @@ h1 {
     font-size: 1rem;
     color: #7E4E32;
     line-height: 1.6;
+    background-color: rgba(211, 228, 235, 0.85);
+    padding: 1.5rem;
+    border-radius: 16px;
+    justify-content: center;
   }
 
   .contact-info img {
-    width: 180px;
+    width: 220px;
     border-radius: 50%;
   }
 
@@ -785,12 +792,18 @@ h1 {
 
   .contact-form-wrapper {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form-wrapper .contact-form {
+    flex: 1;
   }
 
   .contact-form {
     background-color: rgba(123, 182, 219, 0.82);
     padding: 2.5rem;
-    border-radius: 30px;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
@@ -884,7 +897,7 @@ h1 {
     background-color: rgba(123, 182, 219, 0.82);
     margin: 30px ;
     padding: 30px;
-    border-radius: 30px;
+    border-radius: 16px;
    }
 
    @media only screen and (max-width: 600px){
@@ -912,7 +925,7 @@ h1 {
       width: 80%;
       margin-top: 10px;
       text-align: left;
-      border-radius: 40px;
+      border-radius: 16px;
       padding:40px;
     }
 
