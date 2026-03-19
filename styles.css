@@ -817,7 +817,8 @@ h1 {
   }
 
   .form-group input,
-  .form-group textarea {
+  .form-group textarea,
+  .form-group select {
     font-family: 'Libre Baskerville', serif;
     font-size: 0.95rem;
     color: #3a2a1a;
@@ -831,7 +832,8 @@ h1 {
   }
 
   .form-group input:focus,
-  .form-group textarea:focus {
+  .form-group textarea:focus,
+  .form-group select:focus {
     border-color: #7E4E32;
     background-color: rgba(255, 255, 255, 0.9);
   }
@@ -1007,6 +1009,8 @@ h1 {
     border-top: 1px solid rgba(126, 78, 50, 0.2);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 0.4rem;
   }
 
@@ -1041,7 +1045,6 @@ h1 {
 
   .model-cta {
     display: inline-block;
-    margin-top: auto;
     padding-top: 1rem;
     color: #7E4E32;
     font-family: 'Fraunces', serif;
@@ -1053,20 +1056,34 @@ h1 {
     text-decoration: none;
     text-align: center;
     transition: background-color 0.3s;
-    align-self: flex-start;
   }
 
   .model-cta:hover {
     background-color: #d6eef9;
   }
 
-  @media only screen and (max-width: 900px) {
-    .models-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .model-cta-group {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    margin-top: auto;
   }
 
-  @media only screen and (max-width: 600px) {
+  .model-cta-secondary {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .model-cta-secondary a {
+    color: #7E4E32;
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 900px) {
     .models-grid {
       grid-template-columns: 1fr;
     }
@@ -1154,6 +1171,8 @@ h1 {
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 0.4rem;
 }
 

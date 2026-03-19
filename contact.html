@@ -92,6 +92,42 @@
     <script>
     document.addEventListener('DOMContentLoaded', function () {
         var form = document.querySelector('.contact-form');
+        var enquirySelect = document.getElementById('enquiry-type');
+        var messageField = document.getElementById('message');
+
+        // Pre-select dropdown from URL param (?type=waitlist or ?type=newsletter)
+        var params = new URLSearchParams(window.location.search);
+        var type = params.get('type');
+        if (type === 'waitlist') {
+            enquirySelect.value = 'Tidal waitlist';
+        } else if (type === 'hightide') {
+            enquirySelect.value = 'High Tide waitlist';
+        } else if (type === 'driftwood') {
+            enquirySelect.value = 'Driftwood waitlist';
+        } else if (type === 'bespoke') {
+            enquirySelect.value = 'Bespoke waitlist';
+        } else if (type === 'newsletter') {
+            enquirySelect.value = 'Newsletter';
+        }
+
+        // Handle newsletter: auto-fill message and make it optional
+        function handleEnquiryChange() {
+            if (enquirySelect.value === 'Newsletter') {
+                if (!messageField.value) {
+                    messageField.value = 'Please add me to your mailing list.';
+                }
+                messageField.required = false;
+            } else {
+                if (messageField.value === 'Please add me to your mailing list.') {
+                    messageField.value = '';
+                }
+                messageField.required = true;
+            }
+        }
+
+        enquirySelect.addEventListener('change', handleEnquiryChange);
+        handleEnquiryChange();
+
         form.addEventListener('submit', function (e) {
             e.preventDefault();
             fetch(form.action, {
@@ -140,6 +176,17 @@
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="enquiry-type">Type of enquiry</label>
+                    <select id="enquiry-type" name="enquiry_type">
+                        <option value="Inquiry">General inquiry</option>
+                        <option value="Tidal waitlist">Tidal waitlist</option>
+                        <option value="High Tide waitlist">High Tide waitlist</option>
+                        <option value="Driftwood waitlist">Driftwood waitlist</option>
+                        <option value="Bespoke waitlist">Bespoke waitlist</option>
+                        <option value="Newsletter">Newsletter / mailing list</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
