@@ -1007,13 +1007,19 @@ h1 {
     gap: 0.5rem;
   }
 
-  .model-specs li span {
+  .model-specs li span:first-child {
     font-weight: 600;
     min-width: 110px;
+    flex-shrink: 0;
     color: #7E4E32;
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 0.06em;
+  }
+
+  .spec-value {
+    flex: 1;
+    text-align: left;
   }
 
   .model-bottom {
