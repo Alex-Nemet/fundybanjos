@@ -1233,6 +1233,66 @@ h1 {
     margin-top: 2rem;
 }
 
+.product-videos {
+    margin-top: 2rem;
+}
+
+.product-videos-heading {
+    font-family: 'Fraunces', serif;
+    color: #4a3020;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.product-videos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.product-video-card {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-video-card img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.product-video-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.product-video-card:hover .product-video-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.product-video-overlay span {
+    font-family: 'Fraunces', serif;
+    color: #f5ece3;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+@media (max-width: 600px) {
+    .product-videos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .product-gallery-link {
     display: inline-block;
     margin-top: 1.25rem;
