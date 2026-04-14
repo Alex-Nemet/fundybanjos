@@ -538,8 +538,8 @@ h1 {
   .banjo-specs dl {
     display: grid;
     grid-template-columns: auto 1fr;
-    row-gap: 0.6rem;
-    column-gap: 2rem;
+    row-gap: 0.35rem;
+    column-gap: 1.5rem;
     margin: 0;
     align-items: baseline;
   }
@@ -1231,6 +1231,57 @@ h1 {
     font-style: italic;
     font-size: 0.88rem;
     margin-top: 2rem;
+}
+
+.gallery-testimonial {
+    max-width: 860px;
+    margin: 1.5rem 1rem;
+    text-align: center;
+    padding: 1.75rem 2rem;
+    background: #f5ece3;
+    border: 1px solid rgba(126, 78, 50, 0.15);
+    border-radius: 10px;
+}
+
+.gallery-testimonial blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-testimonial blockquote p {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #4a3020;
+    line-height: 1.7;
+}
+
+.gallery-testimonial cite {
+    display: block;
+    margin-top: 0.75rem;
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #7E4E32;
+}
+
+.gallery-testimonial a {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.82rem;
+    color: #7E4E32;
+    text-decoration: none;
+}
+
+.gallery-testimonial a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 700px) {
+    .gallery-testimonial {
+        margin: 1.5rem auto;
+    }
 }
 
 .product-videos {
