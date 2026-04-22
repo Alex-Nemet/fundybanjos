@@ -1835,6 +1835,7 @@ h1 {
     color: #7E4E32;
 }
 
+
 .tuner-body .footer,
 .tuner-body .footertwo {
     color: #A9704E;
@@ -1871,12 +1872,23 @@ h1 {
         grid-template-columns: repeat(2, 1fr);
     }
     .tuner-carousel-arrow {
+        position: absolute;
+        top: 180px;
+        transform: translateY(-50%);
+        z-index: 10;
         width: 36px;
         height: 36px;
         font-size: 1.4rem;
+        background: rgba(255, 255, 255, 0.7);
+    }
+    .tuner-carousel-prev {
+        left: 1.5rem;
+    }
+    .tuner-carousel-next {
+        right: 1.5rem;
     }
     .tuner-carousel-section {
-        gap: 0.3rem;
+        gap: 0;
     }
     .tuner-card-img {
         width: 140px;
