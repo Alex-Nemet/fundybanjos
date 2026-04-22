@@ -1835,6 +1835,19 @@ h1 {
     color: #7E4E32;
 }
 
+.tuner-body .footer,
+.tuner-body .footertwo {
+    color: #A9704E;
+}
+
+.tuner-body .social-icon {
+    color: #A9704E;
+}
+
+.tuner-body .social-icon:hover {
+    color: #7E4E32;
+}
+
 @media only screen and (max-width: 800px) {
     .tuner-card {
         flex-direction: column;
