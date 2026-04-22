@@ -1534,6 +1534,15 @@ h1 {
     overflow-x: hidden;
 }
 
+.tuner-tagline {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: #7E4E32;
+    margin: -0.5rem 0 1.5rem;
+}
+
 .tuner-page {
     max-width: 800px;
     margin: 0 auto 3rem;
