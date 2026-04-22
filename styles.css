@@ -1531,6 +1531,7 @@ h1 {
 .tuner-body {
     background-image: none;
     background-color: #d3e4eb;
+    overflow-x: hidden;
 }
 
 .tuner-page {
@@ -1538,13 +1539,14 @@ h1 {
     margin: 0 auto 3rem;
     padding: 0 2rem;
     color: #4a3020;
+    overflow: hidden;
 }
 
 .tuner-intro {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.05rem;
     line-height: 1.8;
-    text-align: center;
+    text-align: left;
     margin-bottom: 2.5rem;
 }
 
@@ -1576,11 +1578,14 @@ h1 {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    max-width: 100%;
 }
 
 .tuner-carousel-viewport {
     overflow: hidden;
     flex: 1;
+    min-width: 0;
+    width: 0;
     border-radius: 16px;
 }
 
@@ -1830,6 +1835,21 @@ h1 {
     color: #7E4E32;
 }
 
+@media only screen and (max-width: 800px) {
+    .tuner-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        min-height: auto;
+    }
+    .tuner-card-img {
+        width: 160px;
+    }
+    .tuner-card-text {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .tuner-download-options {
         grid-template-columns: 1fr;
@@ -1842,11 +1862,6 @@ h1 {
     }
     .tuner-carousel-section {
         gap: 0;
-    }
-    .tuner-card {
-        flex-direction: column;
-        padding: 1.5rem;
-        min-height: auto;
     }
     .tuner-card-img {
         width: 140px;
