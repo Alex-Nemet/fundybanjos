@@ -1526,3 +1526,329 @@ h1 {
     #lightbox-prev { left: 0.5rem; }
     #lightbox-next { right: 0.5rem; }
 }
+
+/* Fundy Tuner page */
+.tuner-body {
+    background-image: none;
+    background-color: #d3e4eb;
+}
+
+.tuner-page {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+    color: #4a3020;
+}
+
+.tuner-intro {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.tuner-intro p {
+    margin: 0 0 1rem;
+}
+
+.tuner-screenshots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.tuner-screenshots:empty {
+    display: none;
+}
+
+.tuner-screenshots img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    display: block;
+}
+
+.tuner-carousel-section {
+    position: relative;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.tuner-carousel-viewport {
+    overflow: hidden;
+    flex: 1;
+    border-radius: 16px;
+}
+
+.tuner-carousel-track {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.tuner-card {
+    flex: 0 0 100%;
+    min-width: 0;
+    background: #7BB6DB;
+    border-radius: 16px;
+    padding: 2rem;
+    box-sizing: border-box;
+    min-height: 340px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tuner-card-img {
+    flex-shrink: 0;
+    width: 280px;
+    position: relative;
+}
+
+.tuner-card-img img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.tuner-card-slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.tuner-card-slideshow img.active {
+    position: relative;
+    opacity: 1;
+}
+
+.tuner-card-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.tuner-card-text h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.4rem;
+    color: #7E4E32;
+    margin: 0 0 0.75rem;
+}
+
+.tuner-card-text p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0 0 0.75rem;
+}
+
+.tuner-card-text p:last-child {
+    margin-bottom: 0;
+}
+
+.tuner-carousel-arrow {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid rgba(126, 78, 50, 0.3);
+    background: #f0f4f6;
+    color: #7E4E32;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    line-height: 1;
+    padding: 0;
+}
+
+.tuner-carousel-arrow:hover {
+    background: #ffffff;
+}
+
+.tuner-carousel-dots {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tuner-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #7E4E32;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s;
+}
+
+.tuner-dot.active {
+    background: #7E4E32;
+}
+
+.tuner-download {
+    margin-bottom: 2.5rem;
+}
+
+.tuner-download > h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.6rem;
+    color: #7E4E32;
+    text-align: center;
+    margin: 0 0 1.5rem;
+}
+
+.tuner-download-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.tuner-download-card {
+    background: #7BB6DB;
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.tuner-download-card h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem;
+    color: #7E4E32;
+    margin: 0 0 0.5rem;
+}
+
+.tuner-download-card > p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 1rem;
+}
+
+.tuner-download-btn {
+    display: inline-block;
+    color: #7E4E32;
+    font-family: 'Fraunces', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #C4D5DD;
+    padding: 10px 28px;
+    border-radius: 20rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.tuner-download-btn:hover {
+    background-color: #d6eef9;
+}
+
+.tuner-install-steps {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(126, 78, 50, 0.2);
+}
+
+.tuner-install-steps h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 1rem;
+    color: #7E4E32;
+    margin: 0 0 0.5rem;
+}
+
+.tuner-install-steps ol {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.88rem;
+    line-height: 1.7;
+    padding-left: 1.2rem;
+    margin: 0;
+    color: #4a3020;
+}
+
+.tuner-install-steps ol li {
+    padding: 0.25rem 0;
+}
+
+.tuner-install-note {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.82rem;
+    font-style: italic;
+    color: #4a3020;
+    margin: 0.75rem 0 0;
+}
+
+.tuner-coming-soon {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #7E4E32;
+}
+
+.tuner-privacy {
+    background: #e8eff3;
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.tuner-privacy h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.2rem;
+    color: #7E4E32;
+    margin: 0 0 0.5rem;
+}
+
+.tuner-privacy p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.tuner-feedback {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tuner-feedback p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+.tuner-feedback a {
+    color: #7E4E32;
+}
+
+@media only screen and (max-width: 600px) {
+    .tuner-download-options {
+        grid-template-columns: 1fr;
+    }
+    .tuner-screenshots {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tuner-carousel-arrow {
+        display: none;
+    }
+    .tuner-carousel-section {
+        gap: 0;
+    }
+    .tuner-card {
+        flex-direction: column;
+        padding: 1.5rem;
+        min-height: auto;
+    }
+    .tuner-card-img {
+        width: 140px;
+    }
+}

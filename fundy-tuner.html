@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZZTEQN9BP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MZZTEQN9BP');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundy Tuner | Banjo Tuner App for Old-Time Players</title>
+    <meta name="description" content="Fundy Tuner is a banjo tuner app built for clawhammer and old-time players. Bridge setup tool, old-time tunings, auto string detection, capo transposition, and sweetened tuning.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://www.fundybanjos.com/fundy-tuner.html">
+    <meta property="og:site_name" content="Fundy Banjos"/>
+    <meta property="og:title" content="Fundy Tuner | Banjo Tuner App for Old-Time Players"/>
+    <meta property="og:url" content="https://www.fundybanjos.com/fundy-tuner.html"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="A banjo tuner app built for clawhammer and old-time players. Bridge setup, old-time tunings, sweetened intonation, and more."/>
+    <meta property="og:image" content="https://www.fundybanjos.com/img/brown_logo.svg"/>
+    <meta property="og:image:alt" content="Fundy Banjos Logo"/>
+    <meta property="og:locale" content="en_CA"/>
+</head>
+<body class="tuner-body">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <header class="header">
+        <div class="brand">
+            <a href="index.html"><img class="logo" src="img/brown_logo.svg" alt="Fundy Banjos logo"/></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="banjo-models.html">Models</a></li>
+                <li><a href="custom-banjo-gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="fundy-tuner.html">Tuner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="banjo-models.html">Models</a></li>
+                <li><a href="custom-banjo-gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="fundy-tuner.html">Tuner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+
+    <script src="index.js"></script>
+
+    <h1 class="gallery_header">Fundy Tuner</h1>
+
+    <div class="tuner-page">
+
+        <section class="tuner-intro">
+            <p>
+                Fundy Tuner is a banjo tuner app built specifically for clawhammer and old-time players. Most tuners just show you a needle and a note name — Fundy Tuner goes further with tools designed around the way banjo players actually tune, set up, and play their instruments.
+            </p>
+            <p>
+                It's currently in beta and free to download on both Android and iPhone.
+            </p>
+        </section>
+
+        <section class="tuner-carousel-section">
+            <button class="tuner-carousel-arrow tuner-carousel-prev" aria-label="Previous feature">&#8249;</button>
+
+            <div class="tuner-carousel-viewport">
+                <div class="tuner-carousel-track">
+
+                    <div class="tuner-card">
+                        <div class="tuner-card-img">
+                            <img src="img/fundytuner/bridge-setup.png" alt="Fundy Tuner bridge setup tool">
+                        </div>
+                        <div class="tuner-card-text">
+                            <h2>Bridge Setup Tool</h2>
+                            <p>
+                                Setting your banjo's bridge in the right spot can be tricky — if it's even slightly off, your banjo will sound out of tune as you play up the neck, even when the open strings are perfectly in tune.
+                            </p>
+                            <p>
+                                Fundy Tuner includes a step-by-step bridge placement tool that walks you through the process. It listens to your 12th fret harmonic, then listens to the fretted note at the same fret, and tells you exactly which direction to move the bridge and how far. No math, no guesswork — just follow the prompts and your intonation will be dialled in.
+                            </p>
+                            <p>
+                                As far as we know, this is the first tuner app to include a tool like this.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tuner-card">
+                        <div class="tuner-card-img tuner-card-slideshow" data-interval="3000">
+                            <img src="img/fundytuner/tunings-common.jpg" alt="Common 5-string banjo tunings" class="active">
+                            <img src="img/fundytuner/tunings-less-common.jpg" alt="Less common banjo tunings">
+                            <img src="img/fundytuner/settings.jpg" alt="Instrument and tuning settings">
+                        </div>
+                        <div class="tuner-card-text">
+                            <h2>Old-Time Tunings, One Tap Away</h2>
+                            <p>
+                                Banjo players don't just use one tuning — old-time music calls for dozens of them. Fundy Tuner comes loaded with tunings like Double C, Sawmill, Sandy River Belle, Open D, and many more. Switching is as simple as tapping the one you want.
+                            </p>
+                            <p>
+                                You can also star your favourites so they always appear at the top of the list, ready to go.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tuner-card">
+                        <div class="tuner-card-img">
+                            <img src="img/fundytuner/main-tuner.jpg" alt="Fundy Tuner string buttons">
+                        </div>
+                        <div class="tuner-card-text">
+                            <h2>Auto String Detection &amp; String Locking</h2>
+                            <p>
+                                When you pluck a string, the tuner automatically figures out which string you're tuning. Most of the time this works seamlessly — you just play and tune.
+                            </p>
+                            <p>
+                                Occasionally, especially with open-back banjos, harmonics or nearby strings can cause the detected note to jump around. If that happens, just tap the string button to lock the tuner onto that string. It will filter out everything else and focus only on the note you're after. Tap again to unlock when you're done.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tuner-card">
+                        <div class="tuner-card-img">
+                            <img src="img/fundytuner/main-tuner.jpg" alt="Fundy Tuner capo and transposition controls">
+                        </div>
+                        <div class="tuner-card-text">
+                            <h2>Capo &amp; Transposition</h2>
+                            <p>
+                                If you're using a capo or tuning your banjo down a half step, you don't need to do any mental math. Just tell the app where your capo is (or how many steps you're detuning), and all your tuning targets shift automatically. This works with every tuning in the app — even the unusual ones.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tuner-card">
+                        <div class="tuner-card-img tuner-card-slideshow" data-interval="4000">
+                            <img src="img/fundytuner/main-tuner.jpg" alt="Fundy Tuner sweetness slider" class="active">
+                            <img src="img/fundytuner/sweetener-info.jpg" alt="Sweetener explanation">
+                        </div>
+                        <div class="tuner-card-text">
+                            <h2>Sweetness Slider</h2>
+                            <p>
+                                Ever notice how a banjo can be perfectly in tune according to a tuner but still doesn't quite <em>ring</em> the way you want? That's because most tuners use equal temperament — a compromise that spreads tuning equally across all keys but doesn't let any single chord ring as purely as it could.
+                            </p>
+                            <p>
+                                The sweetness slider lets you nudge your tuning toward pure intervals — the kind your ear naturally wants to hear when you're playing open chords and droning strings. Slide it up and your open tuning will ring and shimmer more. It's experimental, and how far you take it is up to your ear and the music you're playing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tuner-card">
+                        <div class="tuner-card-img">
+                            <img src="img/fundytuner/main-tuner.jpg" alt="Fundy Tuner sensitivity control">
+                        </div>
+                        <div class="tuner-card-text">
+                            <h2>Microphone Sensitivity</h2>
+                            <p>
+                                Playing in a noisy room, or finding the tuner picks up too much background sound? You can adjust the microphone sensitivity in the settings. Turn it down to filter out more noise, or turn it up if the tuner isn't picking up your instrument well enough. It's a simple slider that helps the tuner work better wherever you are.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tuner-card">
+                        <div class="tuner-card-img">
+                            <img src="img/fundytuner/main-tuner.jpg" alt="Fundy Tuner match pitch button">
+                        </div>
+                        <div class="tuner-card-text">
+                            <h2>Match Pitch</h2>
+                            <p>
+                                Need to tune to an instrument that isn't at concert pitch — like an old piano or a recording? Tap Match Pitch, play any note on the other instrument, and the app shifts all your string targets to match. No need to figure out how many cents sharp or flat it is — just match and tune.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="tuner-carousel-arrow tuner-carousel-next" aria-label="Next feature">&#8250;</button>
+
+            <div class="tuner-carousel-dots"></div>
+        </section>
+
+        <section class="tuner-download" id="download">
+            <h2>Download</h2>
+
+            <div class="tuner-download-options">
+                <div class="tuner-download-card">
+                    <h3>Android</h3>
+                    <p>Download the APK directly and install it on your phone. It's free.</p>
+                    <a class="tuner-download-btn" href="https://github.com/Alex-Nemet/fundy-tuner-beta/releases/latest" target="_blank">Download for Android</a>
+
+                    <div class="tuner-install-steps">
+                        <h4>How to install</h4>
+                        <ol>
+                            <li>On your Android phone, go to <strong>Settings &gt; Apps &gt; Special app access &gt; Install unknown apps</strong> and allow installs from your browser</li>
+                            <li>Tap the download link above and download the APK file</li>
+                            <li>Open the downloaded file and tap <strong>Install</strong></li>
+                            <li>Open Fundy Tuner and grant microphone permission when it asks</li>
+                        </ol>
+                        <p class="tuner-install-note">The app is about 87 MB — that's normal and doesn't affect how it runs. Tested on Android 10 and above.</p>
+                    </div>
+                </div>
+
+                <div class="tuner-download-card">
+                    <h3>iPhone</h3>
+                    <p>The iPhone version is available as a beta through Apple's TestFlight app.</p>
+                    <a class="tuner-download-btn" href="https://testflight.apple.com/join/r99HZdpm" target="_blank">Get on TestFlight</a>
+
+                    <div class="tuner-install-steps">
+                        <h4>How to install</h4>
+                        <ol>
+                            <li>If you don't already have it, download the free <strong>TestFlight</strong> app from the App Store</li>
+                            <li>Tap the link above on your iPhone — it will open in TestFlight</li>
+                            <li>Tap <strong>Accept</strong> and then <strong>Install</strong></li>
+                            <li>Open Fundy Tuner and grant microphone permission when it asks</li>
+                        </ol>
+                        <p class="tuner-install-note">TestFlight is Apple's official way to try apps before they're released on the App Store. It's free and safe to use.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tuner-privacy">
+            <h2>Privacy</h2>
+            <p>
+                Fundy Tuner has no internet access, makes no network requests, and collects no data. The only permission it needs is your microphone — to hear your instrument. Nothing leaves your device.
+            </p>
+        </section>
+
+        <section class="tuner-feedback">
+            <p>
+                Found a bug or have a suggestion? Email us at <a href="mailto:fundybanjos@gmail.com">fundybanjos@gmail.com</a> — all feedback is read and shapes what gets built next.
+            </p>
+        </section>
+
+    </div>
+
+    <script>
+    (function () {
+        var track = document.querySelector('.tuner-carousel-track');
+        var cards = track.querySelectorAll('.tuner-card');
+        var prevBtn = document.querySelector('.tuner-carousel-prev');
+        var nextBtn = document.querySelector('.tuner-carousel-next');
+        var dotsWrap = document.querySelector('.tuner-carousel-dots');
+        var current = 0;
+        var total = cards.length;
+
+        for (var i = 0; i < total; i++) {
+            var dot = document.createElement('button');
+            dot.className = 'tuner-dot';
+            dot.setAttribute('aria-label', 'Go to feature ' + (i + 1));
+            dot.dataset.index = i;
+            dotsWrap.appendChild(dot);
+        }
+        var dots = dotsWrap.querySelectorAll('.tuner-dot');
+
+        function goTo(index) {
+            if (index < 0) index = total - 1;
+            if (index >= total) index = 0;
+            current = index;
+            track.style.transform = 'translateX(-' + (current * 100) + '%)';
+            for (var i = 0; i < dots.length; i++) {
+                dots[i].classList.toggle('active', i === current);
+            }
+        }
+
+        prevBtn.addEventListener('click', function () { goTo(current - 1); });
+        nextBtn.addEventListener('click', function () { goTo(current + 1); });
+        dotsWrap.addEventListener('click', function (e) {
+            if (e.target.classList.contains('tuner-dot')) {
+                goTo(parseInt(e.target.dataset.index));
+            }
+        });
+
+        var startX = 0;
+        var dragging = false;
+        track.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; dragging = true; });
+        track.addEventListener('touchend', function (e) {
+            if (!dragging) return;
+            dragging = false;
+            var diff = e.changedTouches[0].clientX - startX;
+            if (Math.abs(diff) > 40) goTo(current + (diff < 0 ? 1 : -1));
+        });
+
+        goTo(0);
+
+        var slideshows = document.querySelectorAll('.tuner-card-slideshow');
+        slideshows.forEach(function (el) {
+            var imgs = el.querySelectorAll('img');
+            if (imgs.length < 2) return;
+            var idx = 0;
+            var interval = parseInt(el.dataset.interval) || 3000;
+            setInterval(function () {
+                imgs[idx].classList.remove('active');
+                idx = (idx + 1) % imgs.length;
+                imgs[idx].classList.add('active');
+            }, interval);
+        });
+    })();
+    </script>
+
+    <footer class="footer">
+        <div class="icons">
+            <a class="social-icon" href="https://www.instagram.com/fundybanjos/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a class="social-icon" href="https://www.youtube.com/@fundybanjos" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a class="social-icon" href="contact.html"><ion-icon name="mail-outline"></ion-icon></a>
+        </div>
+        <div class="footertwo">
+            <p>Copyright 2026 Alex Nemet</p>
+            <p>Annapolis Valley, Nova Scotia, Canada</p>
+        </div>
+    </footer>
+
+</body>
+</html>
