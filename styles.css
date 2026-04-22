@@ -1862,15 +1862,6 @@ h1 {
     .tuner-card-text {
         width: 100%;
     }
-}
-
-@media only screen and (max-width: 600px) {
-    .tuner-download-options {
-        grid-template-columns: 1fr;
-    }
-    .tuner-screenshots {
-        grid-template-columns: repeat(2, 1fr);
-    }
     .tuner-carousel-arrow {
         position: absolute;
         top: 180px;
@@ -1886,6 +1877,18 @@ h1 {
     }
     .tuner-carousel-next {
         right: 1.5rem;
+    }
+    .tuner-carousel-section {
+        gap: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .tuner-download-options {
+        grid-template-columns: 1fr;
+    }
+    .tuner-screenshots {
+        grid-template-columns: repeat(2, 1fr);
     }
     .tuner-carousel-section {
         gap: 0;
