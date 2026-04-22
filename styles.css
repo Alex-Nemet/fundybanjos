@@ -1871,10 +1871,12 @@ h1 {
         grid-template-columns: repeat(2, 1fr);
     }
     .tuner-carousel-arrow {
-        display: none;
+        width: 36px;
+        height: 36px;
+        font-size: 1.4rem;
     }
     .tuner-carousel-section {
-        gap: 0;
+        gap: 0.3rem;
     }
     .tuner-card-img {
         width: 140px;
