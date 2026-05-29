@@ -1456,11 +1456,11 @@ h1 {
         align-items: center;
     }
     .comparison-col .model-specs {
-        display: inline-block;
         text-align: left;
     }
     .comparison-col .model-specs li span:first-child {
-        min-width: 85px;
+        min-width: 100px;
+        text-align: right;
     }
 }
 
