@@ -1113,6 +1113,7 @@ h1 {
     max-width: 1100px;
     margin: 0 auto 3rem;
     padding: 0 2rem;
+    overflow-x: hidden;
 }
 
 .product-hero {
@@ -1205,6 +1206,13 @@ h1 {
 
 .product-gallery-section h2 {
     font-family: 'Fraunces', serif;
+    color: #7E4E32;
+    margin: 0 0 1rem;
+}
+
+.product-gallery-note {
+    font-size: 0.85rem;
+    font-style: italic;
     color: #7E4E32;
     margin: 0 0 1rem;
 }
@@ -1449,6 +1457,9 @@ h1 {
     .comparison-col .model-specs {
         display: inline-block;
         text-align: left;
+    }
+    .comparison-col .model-specs li span:first-child {
+        min-width: 85px;
     }
 }
 
