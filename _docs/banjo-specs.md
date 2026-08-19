@@ -190,3 +190,111 @@ Hardware: Brass
 Inlay: Brass Raven
 Side dots: Brass
 Finish: Oil Varnish
+
+---
+
+## The Chanterelle Banjo
+Year: 2026
+
+One-line description:
+
+**Left column**
+Rim: 12" Walnut
+Neck: Walnut
+Scale: 26.25"
+Fingerboard: Rosewood
+Scoop: Ogee
+Heel: Dobson
+Tone ring: Padauk
+Head: Renaissance
+
+**Right column**
+Headstock: Regal
+Tuners: Gotoh
+Tailpiece: No-Knot
+Strings: Medium Steel
+Hardware: Brass
+Inlay: Etched Brass
+Side dots: Yellowheart
+Finish: Oil Varnish
+
+---
+
+## The Yew Banjo
+Year: 2026
+
+One-line description:
+
+**Left column**
+Rim: 11" Torrified Maple
+Neck: Torrified Maple
+Scale: 25.5"
+Fingerboard: Yew
+Scoop: Curved Brass Etched
+Heel: Dobson
+Tone ring: Sapele
+Head: Renaissance
+
+**Right column**
+Headstock: Regal
+Tuners: Rickard 10:1
+Tailpiece: No-Knot
+Strings: Medium Steel
+Hardware: Brass
+Inlay: Maple and Rosewood
+Side dots: Rosewood
+Finish: Oil Varnish
+
+---
+
+## The Ebonized Banjo
+Year: 2026
+
+One-line description: High Tide configuration with customizations. This banjo features an ebonized Oak pot, using iron acetate mixture to darken the rim. 
+
+**Left column**
+Rim: 12" Oak
+Neck: Ash
+Scale: 25.5"
+Fingerboard: Torrified Maple
+Scoop: Curved
+Heel: Dobson
+Tone ring: Padauk
+Head: Renaissance
+
+**Right column**
+Headstock: Paddle
+Tuners: Gotoh
+Tailpiece: No-Knot
+Strings: Medium Steel
+Hardware: Brass
+Inlay: Brass headstock inlays
+Side dots: Rosewood
+Finish: Oil Varnish
+
+---
+
+## High Tide with custom inlays
+Year: 2026
+
+One-line description: High Tide configuration with customizations. This banjo features the first torrified maple segmented rim I've made. 
+
+**Left column**
+Rim: 11" torrified maple
+Neck: Torrified Maple
+Scale: 25.5"
+Fingerboard: Rosewood
+Scoop: Curved
+Heel: Dobson
+Tone ring: Padauk
+Head: Renaissance
+
+**Right column**
+Headstock: Regal
+Tuners: Gotoh
+Tailpiece: No-Knot
+Strings: Medium Steel
+Hardware: Brass
+Inlay: Yellowheart
+Side dots: Yellowheart
+Finish: Nitrocellulose Lacquer
