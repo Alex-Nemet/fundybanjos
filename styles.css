@@ -935,9 +935,9 @@ h1 {
 /* Models page */
   .models-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    max-width: 900px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
     margin: 2rem auto 4rem;
     padding: 0 2rem;
     align-items: stretch;
