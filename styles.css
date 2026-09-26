@@ -383,10 +383,16 @@ h1 {
 
   /* solid buttons so the links stay readable over the beach photo */
   .back-to-gallery.on-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     padding-bottom: 1.5rem;
   }
 
   .back-to-gallery.on-photo a {
+    min-width: 11rem;
+    text-align: center;
     color: #fff;
     background-color: #7E4E32;
     padding: 0.5rem 1.2rem;
