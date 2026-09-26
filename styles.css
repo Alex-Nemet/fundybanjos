@@ -381,6 +381,24 @@ h1 {
     text-decoration: underline;
   }
 
+  /* solid buttons so the links stay readable over the beach photo */
+  .back-to-gallery.on-photo {
+    padding-bottom: 1.5rem;
+  }
+
+  .back-to-gallery.on-photo a {
+    color: #fff;
+    background-color: #7E4E32;
+    padding: 0.5rem 1.2rem;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+  }
+
+  .back-to-gallery.on-photo a:hover {
+    background-color: #5E3A25;
+    text-decoration: none;
+  }
+
   .enquire-cta {
     text-align: center;
     padding: 1rem 0 1.5rem;
