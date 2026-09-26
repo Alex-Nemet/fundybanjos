@@ -112,7 +112,25 @@
         </div>
   
         <div class="container_right">
-            <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/eZi4lcXVeFU?si=vyhLWlkJEm-ow5Q3&hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!-- thumbnail stand-in: the YouTube player (~1 MB) only loads once someone clicks play -->
+            <button class="responsive-iframe video-facade" type="button" data-video-id="eZi4lcXVeFU" aria-label="Play video">
+                <img src="https://i.ytimg.com/vi_webp/eZi4lcXVeFU/sddefault.webp" alt="">
+                <svg class="video-play" viewBox="0 0 68 48" aria-hidden="true"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#f00"/><path d="M45 24 27 14v20" fill="#fff"/></svg>
+            </button>
+            <script>
+                document.querySelector('.video-facade').addEventListener('click', function () {
+                    var iframe = document.createElement('iframe');
+                    iframe.className = 'responsive-iframe';
+                    iframe.width = 560;
+                    iframe.height = 315;
+                    iframe.src = 'https://www.youtube.com/embed/' + this.dataset.videoId + '?autoplay=1';
+                    iframe.title = 'YouTube video player';
+                    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+                    iframe.allowFullscreen = true;
+                    iframe.style.border = '0';
+                    this.replaceWith(iframe);
+                });
+            </script>
         </div>
           
       
