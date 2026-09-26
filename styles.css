@@ -334,6 +334,13 @@ h1 {
   transition: color 0.5s;
 }
 
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
 .social-icon:hover {
     color: #ffffff;
 }
