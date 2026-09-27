@@ -42,6 +42,12 @@ document.addEventListener('DOMContentLoaded', function () {
         img.src = images[currentIndex].src;
         overlay.classList.add('active');
         document.body.style.overflow = 'hidden';
+        if (typeof trackEvent === 'function') {
+            trackEvent('photo_open', {
+                photo: images[currentIndex].getAttribute('src').split('/').pop(),
+                photo_position: currentIndex + 1
+            });
+        }
     }
 
     function close() {
