@@ -1,0 +1,61 @@
+date,commit,label,page,form_factor,runs,score,fcp_s,lcp_s,cls,total_kb,requests
+2026-09-26,63b8f7b,Before perf work,about,desktop,3,96,0.65,1.36,0.004,965,21
+2026-09-26,63b8f7b,Before perf work,about,mobile,3,84,3.13,3.28,0,307,20
+2026-09-26,63b8f7b,Before perf work,chanterelle-open-back-banjo,desktop,3,97,0.81,1.22,0.016,1410,39
+2026-09-26,63b8f7b,Before perf work,chanterelle-open-back-banjo,mobile,3,76,2.95,4.68,0,1410,39
+2026-09-26,63b8f7b,Before perf work,custom-banjo-gallery,desktop,3,93,0.62,1.71,0.014,1817,30
+2026-09-26,63b8f7b,Before perf work,custom-banjo-gallery,mobile,3,74,2.96,5.06,0,1159,29
+2026-09-26,63b8f7b,Before perf work,fundy-tuner,desktop,3,97,0.69,1.22,0.046,1082,26
+2026-09-26,63b8f7b,Before perf work,fundy-tuner,mobile,3,70,3.13,6.2,0,1082,26
+2026-09-26,63b8f7b,Before perf work,index,desktop,3,96,0.81,1.33,0.032,2018,38
+2026-09-26,63b8f7b,Before perf work,index,mobile,3,59,6.66,10.87,0,1359,37
+2026-09-26,63b8f7b,Before perf work,testimonials,desktop,3,90,0.63,2.11,0.008,2485,29
+2026-09-26,63b8f7b,Before perf work,testimonials,mobile,3,69,3.12,6.6,0,1827,28
+2026-09-26,669f658,Lazy-load images,about,desktop,3,97,0.61,1.28,0.004,965,21
+2026-09-26,669f658,Lazy-load images,about,mobile,3,84,3.13,3.29,0,307,20
+2026-09-26,669f658,Lazy-load images,chanterelle-open-back-banjo,desktop,3,97,0.64,1.17,0.016,1410,39
+2026-09-26,669f658,Lazy-load images,chanterelle-open-back-banjo,mobile,3,75,2.98,4.71,0,1410,39
+2026-09-26,669f658,Lazy-load images,custom-banjo-gallery,desktop,3,93,0.62,1.67,0.009,1817,30
+2026-09-26,669f658,Lazy-load images,custom-banjo-gallery,mobile,3,77,2.95,4.37,0,835,25
+2026-09-26,669f658,Lazy-load images,fundy-tuner,desktop,3,98,0.66,1.1,0.039,930,25
+2026-09-26,669f658,Lazy-load images,fundy-tuner,mobile,3,73,3.14,5.17,0,1082,26
+2026-09-26,669f658,Lazy-load images,index,desktop,3,96,0.62,1.29,0.028,2018,37
+2026-09-26,669f658,Lazy-load images,index,mobile,3,58,6.91,11.02,0,1359,37
+2026-09-26,669f658,Lazy-load images,testimonials,desktop,3,90,0.64,2.01,0.016,2485,29
+2026-09-26,669f658,Lazy-load images,testimonials,mobile,3,71,3.14,5.63,0,1083,25
+2026-09-26,688a761,"Trim fonts, inline icons",about,desktop,3,97,0.61,1.28,0.004,941,14
+2026-09-26,688a761,"Trim fonts, inline icons",about,mobile,3,86,2.99,3.14,0,283,13
+2026-09-26,688a761,"Trim fonts, inline icons",chanterelle-open-back-banjo,desktop,3,97,0.62,1.21,0.016,1401,32
+2026-09-26,688a761,"Trim fonts, inline icons",chanterelle-open-back-banjo,mobile,3,77,2.83,4.63,0,1401,32
+2026-09-26,688a761,"Trim fonts, inline icons",custom-banjo-gallery,desktop,3,94,0.61,1.63,0.009,1808,23
+2026-09-26,688a761,"Trim fonts, inline icons",custom-banjo-gallery,mobile,3,78,2.82,4.32,0,826,18
+2026-09-26,688a761,"Trim fonts, inline icons",fundy-tuner,desktop,3,98,0.65,1.07,0.045,921,18
+2026-09-26,688a761,"Trim fonts, inline icons",fundy-tuner,mobile,3,74,3.14,4.95,0,1073,19
+2026-09-26,688a761,"Trim fonts, inline icons",index,desktop,3,97,0.61,1.25,0.015,2009,30
+2026-09-26,688a761,"Trim fonts, inline icons",index,mobile,3,59,6.8,10.77,0,1351,29
+2026-09-26,688a761,"Trim fonts, inline icons",testimonials,desktop,3,90,0.73,2.03,0.01,2461,22
+2026-09-26,688a761,"Trim fonts, inline icons",testimonials,mobile,3,71,3.14,5.55,0,1059,18
+2026-09-26,a937fcf,Click-to-load homepage video,about,desktop,3,96,0.6,1.32,0.004,942,14
+2026-09-26,a937fcf,Click-to-load homepage video,about,mobile,3,86,2.98,3.13,0,283,13
+2026-09-26,a937fcf,Click-to-load homepage video,chanterelle-open-back-banjo,desktop,3,97,0.6,1.2,0.016,1401,32
+2026-09-26,a937fcf,Click-to-load homepage video,chanterelle-open-back-banjo,mobile,3,77,2.82,4.62,0,1401,32
+2026-09-26,a937fcf,Click-to-load homepage video,custom-banjo-gallery,desktop,3,94,0.6,1.63,0.01,1809,23
+2026-09-26,a937fcf,Click-to-load homepage video,custom-banjo-gallery,mobile,3,78,2.83,4.32,0,826,18
+2026-09-26,a937fcf,Click-to-load homepage video,fundy-tuner,desktop,3,98,0.64,1.05,0.039,921,18
+2026-09-26,a937fcf,Click-to-load homepage video,fundy-tuner,mobile,3,74,3.13,4.93,0,1074,19
+2026-09-26,a937fcf,Click-to-load homepage video,index,desktop,3,96,0.6,1.33,0.015,963,14
+2026-09-26,a937fcf,Click-to-load homepage video,index,mobile,3,85,2.98,3.28,0,305,13
+2026-09-26,a937fcf,Click-to-load homepage video,testimonials,desktop,3,90,0.65,2.01,0.016,2462,22
+2026-09-26,a937fcf,Click-to-load homepage video,testimonials,mobile,3,71,3.12,5.55,0,1059,18
+2026-09-26,aa3f456,"Load fonts in parallel, smaller images",about,desktop,3,99,0.52,0.92,0.004,791,13
+2026-09-26,aa3f456,"Load fonts in parallel, smaller images",about,mobile,3,86,2.99,3.14,0,283,12
+2026-09-26,aa3f456,"Load fonts in parallel, smaller images",chanterelle-open-back-banjo,desktop,3,97,0.9,1.17,0.016,1401,31
+2026-09-26,aa3f456,"Load fonts in parallel, smaller images",chanterelle-open-back-banjo,mobile,3,79,2.81,4.54,0.017,1401,31
+2026-09-26,aa3f456,"Load fonts in parallel, smaller images",custom-banjo-gallery,desktop,3,94,0.93,1.49,0.009,1637,22
+2026-09-26,aa3f456,"Load fonts in parallel, smaller images",custom-banjo-gallery,mobile,3,81,2.81,4.17,0.041,804,17
+2026-09-26,aa3f456,"Load fonts in parallel, smaller images",fundy-tuner,desktop,3,100,0.57,0.57,0.039,375,17
+2026-09-26,aa3f456,"Load fonts in parallel, smaller images",fundy-tuner,mobile,3,85,3.13,3.43,0.024,413,18
+2026-09-26,aa3f456,"Load fonts in parallel, smaller images",index,desktop,3,97,0.52,1.25,0.012,812,13
+2026-09-26,aa3f456,"Load fonts in parallel, smaller images",index,mobile,3,87,2.94,3.24,0.019,304,12
+2026-09-26,aa3f456,"Load fonts in parallel, smaller images",testimonials,desktop,3,96,0.92,1.19,0.008,1012,21
+2026-09-26,aa3f456,"Load fonts in parallel, smaller images",testimonials,mobile,3,85,3.12,3.5,0.006,412,17
