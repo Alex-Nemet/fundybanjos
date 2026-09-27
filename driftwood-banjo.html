@@ -12,6 +12,8 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+    // Only count visits on the live site, not local testing
+    window['ga-disable-G-MZZTEQN9BP'] = !/(^|\.)fundybanjos\.com$/.test(location.hostname);
     gtag('config', 'G-MZZTEQN9BP');
     </script>
 
