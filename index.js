@@ -34,6 +34,10 @@ document.addEventListener('click', function (e) {
             link_location: linkLocation(link),
             enquiry_type: new URLSearchParams(href.split('?')[1] || '').get('type') || 'general'
         });
+    } else if (link && href.indexOf('mailto:') === 0) {
+        trackEvent('email_click', { link_location: linkLocation(link) });
+    } else if (link && href.indexOf('tel:') === 0) {
+        trackEvent('phone_click', { link_location: linkLocation(link) });
     } else if (link && link.matches('.social-icon, .index_social-icon')) {
         trackEvent('social_click', { network: link.getAttribute('aria-label') || href });
     } else if (link && link.matches('.tuner-download-btn')) {
