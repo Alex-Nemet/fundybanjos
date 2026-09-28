@@ -1995,3 +1995,11 @@ h1 {
         width: 140px;
     }
 }
+/* "Page not found" (404.html) */
+.not-found {
+    text-align: center;
+    padding: 0 1.5rem 1.5rem;
+    color: #7E4E32;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 1.7;
+}
