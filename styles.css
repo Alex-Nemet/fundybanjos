@@ -2024,3 +2024,27 @@ h1 {
 .tuner-download-btn.tuner-coffee-btn:hover {
     background-color: #f0cc00;
 }
+
+/* Header menu: spacing shrinks with the window so all items fit; below 1050px the
+   ☰ menu takes over (the full menu needs roughly that much room). */
+.logo {
+    padding-left: clamp(16px, 5vw, 100px);
+}
+
+header nav {
+    padding-right: clamp(16px, 4vw, 80px);
+}
+
+header nav li {
+    padding: 0 clamp(8px, 1.6vw, 45px);
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 1050px) {
+    header nav {
+        display: none;
+    }
+    #hamburger-icon {
+        display: block;
+    }
+}
