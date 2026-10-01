@@ -2003,3 +2003,15 @@ h1 {
     font-family: 'Libre Baskerville', serif;
     line-height: 1.7;
 }
+
+/* Buy me a coffee, under the tuner download cards */
+.tuner-support {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.tuner-support p {
+    font-family: 'Libre Baskerville', serif;
+    color: #7E4E32;
+    margin: 0 0 .9rem;
+}

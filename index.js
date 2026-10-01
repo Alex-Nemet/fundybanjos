@@ -40,6 +40,8 @@ document.addEventListener('click', function (e) {
         trackEvent('phone_click', { link_location: linkLocation(link) });
     } else if (link && link.matches('.social-icon, .index_social-icon')) {
         trackEvent('social_click', { network: link.getAttribute('aria-label') || href });
+    } else if (link && href.indexOf('buymeacoffee.com') !== -1) {
+        trackEvent('support_click', { link_location: linkLocation(link) });
     } else if (link && link.matches('.tuner-download-btn')) {
         trackEvent('app_download_click', { link_text: link.textContent.trim() });
     } else if (link && link.matches('.gallery_container')) {
