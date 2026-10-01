@@ -2015,3 +2015,12 @@ h1 {
     color: #7E4E32;
     margin: 0 0 .9rem;
 }
+
+.tuner-download-btn.tuner-coffee-btn {
+    background-color: #FFDD00;
+    color: #3b2a1e;
+}
+
+.tuner-download-btn.tuner-coffee-btn:hover {
+    background-color: #f0cc00;
+}
