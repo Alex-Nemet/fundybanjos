@@ -52,7 +52,7 @@ document.addEventListener('click', function (e) {
     }
 
     var modelCard = e.target.closest('.model-card[data-href]');
-    if (modelCard && !e.target.closest('.model-cta')) {
+    if (modelCard && !e.target.closest('a')) {
         trackEvent('select_model', { model: cardTitle(modelCard) });
     }
 

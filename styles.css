@@ -2075,14 +2075,13 @@ header nav li {
     background-color: #7BB6DB;
 }
 
-/* Friendly line under the contact page heading */
-.contact-intro {
-    text-align: center;
+/* Friendly note at the top of the contact form */
+.form-intro {
     font-family: 'Libre Baskerville', serif;
-    color: #7E4E32;
-    margin: -1rem auto 1.5rem;
-    padding: 0 1.25rem;
-    max-width: 560px;
+    color: #5E3A25;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 1.25rem;
 }
 
 @media only screen and (max-width: 600px) {

@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banjo Models | Tidal, Driftwood & Bespoke | Fundy Banjos Nova Scotia Canada</title>
     <meta name="description" content="Browse Fundy Banjos' handcrafted banjo offerings — the Tidal, Driftwood, and fully custom bespoke builds. Built by Alex Nemet in the Annapolis Valley, Nova Scotia, Canada.">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2026-10-03">
     <link rel="canonical" href="https://www.fundybanjos.com/banjo-models.html">
     <meta property="og:site_name" content="Fundy Banjos"/>
     <meta property="og:title" content="Banjo Models | Fundy Banjos Nova Scotia Canada"/>
@@ -68,7 +68,7 @@
     </header>
     <hr>
 
-    <script src="index.js"></script>
+    <script src="index.js?v=2026-10-03"></script>
 
     <h1 class="gallery_header">Fundy Banjos — Models & Pricing</h1>
 
@@ -174,7 +174,7 @@
     <script>
         document.querySelectorAll('.model-card[data-href]').forEach(function (card) {
             card.addEventListener('click', function (e) {
-                if (!e.target.closest('.model-cta')) {
+                if (!e.target.closest('a')) {  // links inside the card go where they point
                     window.location.href = card.dataset.href;
                 }
             });
