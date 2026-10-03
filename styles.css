@@ -2083,3 +2083,15 @@ header nav li {
         margin: .8rem 0 0;
     }
 }
+
+/* Homepage "Made in Canada" line under the heading */
+.made-in-canada {
+    display: inline-block;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.95rem;
+    color: #5E3A25;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20rem;
+    padding: .4rem 1rem;
+    margin-top: .4rem;
+}
