@@ -2048,3 +2048,45 @@ header nav li {
         display: block;
     }
 }
+
+/* Invitation to get in touch at the end of banjo pages and the gallery */
+.end-cta {
+    text-align: center;
+    max-width: 560px;
+    margin: 2.5rem auto 1.5rem;
+    padding: 0 1.25rem;
+}
+
+.end-cta p {
+    font-family: 'Libre Baskerville', serif;
+    color: #7E4E32;
+    line-height: 1.7;
+    margin: 0 0 1.1rem;
+}
+
+/* Softer second button next to the main one (homepage "Get in touch") */
+.call-to-action.call-to-action-soft {
+    background-color: transparent;
+    border: 2px solid #7BB6DB;
+    margin-left: .6rem;
+}
+
+.call-to-action.call-to-action-soft:hover {
+    background-color: #7BB6DB;
+}
+
+/* Friendly line under the contact page heading */
+.contact-intro {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    color: #7E4E32;
+    margin: -1rem auto 1.5rem;
+    padding: 0 1.25rem;
+    max-width: 560px;
+}
+
+@media only screen and (max-width: 600px) {
+    .call-to-action.call-to-action-soft {
+        margin: .8rem 0 0;
+    }
+}

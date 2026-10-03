@@ -149,6 +149,15 @@
             enquirySelect.value = 'Newsletter';
         }
 
+        // Start the message for them when they came from a banjo or model page.
+        var about = params.get('about');
+        if (about && !messageField.value) {
+            messageField.value = (type === 'custom'
+                ? "Hi Alex, I'm interested in a banjo like " + about.replace(/^The /, 'the ') + ". "
+                : about === 'Bespoke' ? "Hi Alex, I have a question about a bespoke build. "
+                : "Hi Alex, I have a question about the " + about + ". ");
+        }
+
         // Handle newsletter: auto-fill message and make it optional
         function handleEnquiryChange() {
             if (enquirySelect.value === 'Newsletter') {
@@ -188,6 +197,7 @@
 
     
     <h1 class="gallery_header">Get in Touch</h1>
+    <p class="contact-intro">Questions are welcome, and there's no commitment. I usually reply within a day or two.</p>
 
     <div class="contact-layout">
 
@@ -217,7 +227,7 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="enquiry-type">Type of enquiry</label>
+                    <label for="enquiry-type">Type of enquiry <span class="form-optional">(optional)</span></label>
                     <select id="enquiry-type" name="enquiry_type">
                         <option value="Inquiry">General inquiry</option>
                         <option value="Tidal waitlist">Tidal waitlist</option>

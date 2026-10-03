@@ -15,6 +15,9 @@ function linkLocation(el) {
     if (el.closest('footer')) return 'footer';
     if (el.closest('.model-card')) return 'model card';
     if (el.closest('.enquire-cta')) return 'enquire button';
+    if (el.closest('.end-cta')) return 'end of page';
+    if (el.closest('.model-cta-group')) return 'model button';
+    if (el.matches('.call-to-action')) return 'homepage button';
     if (el.closest('.back-to-gallery')) return 'page button';
     return 'page';
 }
