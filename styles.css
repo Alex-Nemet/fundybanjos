@@ -2064,15 +2064,9 @@ header nav li {
     margin: 0 0 1.1rem;
 }
 
-/* Softer second button next to the main one (homepage "Get in touch") */
+/* Second homepage button ("Get in touch"), styled like the main one */
 .call-to-action.call-to-action-soft {
-    background-color: transparent;
-    border: 2px solid #7BB6DB;
     margin-left: .6rem;
-}
-
-.call-to-action.call-to-action-soft:hover {
-    background-color: #7BB6DB;
 }
 
 /* Friendly note at the top of the contact form */
