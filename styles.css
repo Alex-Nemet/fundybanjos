@@ -11,11 +11,7 @@ body {
     overflow-x: hidden;
    /*  font-family: 'Libre Baskerville', serif; */
     font-family: 'Libre Franklin', sans-serif;
-    background-image: url(img/houstons_beach_background.webp);
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #d3e4eb;
 }
 
 .logo {
@@ -146,6 +142,7 @@ ul a:hover {
     text-align: center;
     flex-grow: 1;
     flex-wrap: wrap;
+    padding: 3rem 0;
     color: #7E4E32;
     font-size: 18px;
 }
@@ -328,7 +325,7 @@ h1 {
   }
 
 .footer {
-    /* background-color: #678999d3; */
+    background-color: #2d444f;
     display: flex;
     justify-content: center;
     color: white;
@@ -339,7 +336,7 @@ h1 {
 }
 
 .index_footer {
-  /* background-color: #678999d3; */
+  background-color: #2d444f;
   display: flex;
   justify-content: center;
   color: white;
@@ -2094,4 +2091,117 @@ header nav li {
     border-radius: 20rem;
     padding: .4rem 1rem;
     margin-top: .4rem;
+}
+
+/* Google reviews */
+.stars {
+    color: #b07a2a;
+    font-size: 1.05em;
+    letter-spacing: 0.1em;
+}
+
+.google-rating {
+    display: block;
+    margin-top: 0.6rem;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.8rem;
+    color: #7E4E32;
+    text-decoration: none;
+}
+
+.google-rating:hover {
+    text-decoration: underline;
+}
+
+.google-reviews {
+    max-width: 1100px;
+    margin: 0 auto 1rem;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.google-reviews-summary {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #7E4E32;
+    margin: 0 0 1.25rem;
+}
+
+.google-reviews-summary .stars {
+    margin-right: 0.35rem;
+}
+
+.google-reviews-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    column-gap: 1rem;
+    text-align: left;
+}
+
+@media (min-width: 700px) {
+    .google-reviews-grid {
+        columns: 2;
+    }
+}
+
+.google-review {
+    margin: 0 0 1rem;
+    padding: 1.25rem 1.4rem;
+    background: #f5ece3;
+    border: 1px solid rgba(126, 78, 50, 0.15);
+    border-radius: 10px;
+    break-inside: avoid;
+}
+
+.google-review blockquote {
+    margin: 0.5rem 0 0;
+}
+
+.google-review blockquote p {
+    margin: 0;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: #4a3020;
+}
+
+.google-review figcaption {
+    margin-top: 0.75rem;
+    font-family: 'Fraunces', serif;
+    font-size: 0.9rem;
+    color: #7E4E32;
+}
+
+.google-reviews-link {
+    display: block;
+    margin-top: 0.4rem;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.85rem;
+    color: #7E4E32;
+    text-decoration: none;
+}
+
+.google-reviews-link:hover {
+    text-decoration: underline;
+}
+
+.google-review blockquote p + p {
+    margin-top: 0.75rem;
+}
+
+.google-rating-centered {
+    text-align: center;
+    font-size: 0.95rem;
+    margin: -0.5rem auto 1rem;
+}
+
+.google-rating-badge {
+    display: inline-block;
+    margin-top: 1.25rem;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.85rem;
+    border: 1px solid rgba(126, 78, 50, 0.3);
+    border-radius: 20rem;
 }
