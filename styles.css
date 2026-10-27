@@ -2048,6 +2048,15 @@ header nav li {
     margin: 0 0 1.1rem;
 }
 
+/* Homepage buttons share one width so they line up, side by side or stacked */
+.button .call-to-action {
+    width: 17rem;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
 /* Second homepage button ("Get in touch"), styled like the main one */
 .call-to-action.call-to-action-soft {
     margin-left: .6rem;
@@ -2074,9 +2083,6 @@ header nav li {
     font-family: 'Libre Baskerville', serif;
     font-size: 0.95rem;
     color: #5E3A25;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 20rem;
-    padding: .4rem 1rem;
     margin-top: .4rem;
 }
 
