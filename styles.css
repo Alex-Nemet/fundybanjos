@@ -2198,3 +2198,37 @@ header nav li {
     border: 1px solid rgba(126, 78, 50, 0.3);
     border-radius: 20rem;
 }
+
+/* Models page: "Not sure which model?" prompt after the cards */
+.help-choose {
+    grid-column: 1 / -1;
+    max-width: 640px;
+    margin: 2.5rem auto 1rem;
+    padding: 1.75rem 2rem;
+    text-align: center;
+    background: #f5ece3;
+    border: 1px solid rgba(126, 78, 50, 0.15);
+    border-radius: 10px;
+}
+
+.help-choose h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.35rem;
+    color: #7E4E32;
+    margin: 0 0 0.6rem;
+}
+
+.help-choose p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #4a3020;
+    margin: 0 0 1.1rem;
+}
+
+@media (max-width: 699px) {
+    .help-choose {
+        margin: 2rem 16px 1rem;
+        padding: 1.5rem 1.25rem;
+    }
+}

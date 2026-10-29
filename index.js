@@ -17,6 +17,7 @@ function linkLocation(el) {
     if (el.closest('.enquire-cta')) return 'enquire button';
     if (el.closest('.end-cta')) return 'end of page';
     if (el.closest('.model-cta-group')) return 'model button';
+    if (el.closest('.help-choose')) return 'help me choose';
     if (el.matches('.call-to-action')) return 'homepage button';
     if (el.closest('.back-to-gallery')) return 'page button';
     return 'page';
