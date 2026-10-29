@@ -2226,9 +2226,17 @@ header nav li {
     margin: 0 0 1.1rem;
 }
 
+/* Once the cards stack into one column, show the prompt first, right
+   after the intro, instead of below three long cards */
+@media only screen and (max-width: 900px) {
+    .help-choose {
+        order: -1;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 699px) {
     .help-choose {
-        margin: 2rem 16px 1rem;
         padding: 1.5rem 1.25rem;
     }
 }
