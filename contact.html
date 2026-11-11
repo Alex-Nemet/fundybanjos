@@ -152,6 +152,11 @@
         // Start the message for them when they came from a banjo or model page.
         if (type === 'help') {
             document.querySelector('.choose-guide').hidden = false;
+            var helpFields = document.querySelector('.help-fields');
+            helpFields.hidden = false;
+            helpFields.querySelectorAll('select, input, textarea').forEach(function (el) { el.disabled = false; });
+            document.querySelector('label[for="message"]').textContent = 'Anything else?';
+            messageField.rows = 3;
             if (!messageField.value) messageField.value = "Hi Alex, I'm not sure which model is right for me. ";
         }
         var about = params.get('about');
@@ -225,7 +230,7 @@
                     <span class="choose-desc">Traditional tackhead with a skin head and tapered tuners</span>
                 </a>
             </div>
-            <p class="choose-ask">Tell me how you play, what banjo you have now, the sound or look you like, and a rough budget, and I'll suggest one. A sentence or two is plenty.</p>
+            <p class="choose-ask">Answer a few quick questions in the form below and I'll suggest one. Skip any you're not sure about.</p>
         </section>
 
         <div class="contact-info">
@@ -264,6 +269,28 @@
                         <option value="Bespoke waitlist">Bespoke waitlist</option>
                         <option value="Newsletter">Newsletter / mailing list</option>
                     </select>
+                </div>
+                <!-- Only shown (and sent) when they came from "Help me choose" -->
+                <div class="help-fields" hidden>
+                    <div class="form-group">
+                        <label for="play-style">How do you play? <span class="form-optional">(optional)</span></label>
+                        <select id="play-style" name="play_style" disabled>
+                            <option value="">Choose one</option>
+                            <option>Clawhammer / old-time</option>
+                            <option>Three-finger / bluegrass</option>
+                            <option>Fingerstyle / other</option>
+                            <option>Just starting out</option>
+                            <option>Not sure yet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="current-banjo">What banjo do you play now? <span class="form-optional">(optional)</span></label>
+                        <input type="text" id="current-banjo" name="current_banjo" placeholder="e.g. a Deering Goodtime, or none yet" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="looking-for">What are you looking for? <span class="form-optional">(optional)</span></label>
+                        <textarea id="looking-for" name="looking_for" rows="3" placeholder="The sound, look or woods you like, and a rough budget" disabled></textarea>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
