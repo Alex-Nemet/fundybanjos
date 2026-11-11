@@ -2305,6 +2305,7 @@ header nav li {
     font-size: 0.85rem;
     color: #7a5a44;
     align-self: baseline;
+    white-space: nowrap;
 }
 
 .choose-desc {
@@ -2319,6 +2320,7 @@ header nav li {
     font-style: italic;
     color: #A9704E;
     margin-left: 0.3rem;
+    white-space: nowrap;
 }
 
 .choose-ask {
