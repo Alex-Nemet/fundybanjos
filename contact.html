@@ -151,6 +151,7 @@
 
         // Start the message for them when they came from a banjo or model page.
         if (type === 'help') {
+            enquirySelect.value = 'Help choosing a model';
             document.querySelector('.choose-guide').hidden = false;
             var helpFields = document.querySelector('.help-fields');
             helpFields.hidden = false;
@@ -263,6 +264,7 @@
                     <label for="enquiry-type">Type of enquiry <span class="form-optional">(optional)</span></label>
                     <select id="enquiry-type" name="enquiry_type">
                         <option value="Inquiry">General inquiry</option>
+                        <option value="Help choosing a model">Help choosing a model</option>
                         <option value="Tidal waitlist">Tidal waitlist</option>
                         <option value="High Tide waitlist">High Tide waitlist</option>
                         <option value="Driftwood waitlist">Driftwood waitlist</option>
