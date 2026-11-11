@@ -884,13 +884,22 @@ h1 {
     font-weight: bold;
   }
 
-  .help-fields {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+  .form-hint {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: #4a3020;
+    margin: 0 0 0.2rem;
   }
 
-  .help-fields[hidden] {
+  /* On phones, Help me choose visitors get the form straight after the guide, before the photo */
+  @media only screen and (max-width: 900px) {
+    .contact-layout.helping .contact-info {
+      order: 1;
+    }
+  }
+
+  .form-group[hidden] {
     display: none;
   }
 
