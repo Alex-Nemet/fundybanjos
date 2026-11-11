@@ -2243,69 +2243,93 @@ header nav li {
 
 /* Short model guide shown on the contact page when someone clicks "Help me choose" */
 .choose-guide {
-    max-width: 760px;
+    max-width: 720px;
     margin: 0 auto 2rem;
-    padding: 1.5rem 2rem;
+    padding: 1.25rem 1.5rem;
     background: #f5ece3;
     border: 1px solid rgba(126, 78, 50, 0.15);
     border-radius: 10px;
     font-family: 'Libre Baskerville', serif;
-    font-size: 0.95rem;
-    line-height: 1.6;
     color: #4a3020;
 }
 
 .choose-guide h2 {
     font-family: 'Fraunces', serif;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     color: #7E4E32;
-    margin: 0 0 0.8rem;
+    margin: 0 0 0.75rem;
 }
 
-.choose-guide ul {
-    margin: 0 0 1rem;
-    padding-left: 1.2rem;
+.choose-models {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    margin-bottom: 0.9rem;
 }
 
-/* Undo the site-wide nav list styles (padding, brown text, hover zoom) */
-.choose-guide ul li {
-    padding: 0;
-    margin: 0 0 0.3rem;
-    color: #4a3020;
-    font-weight: normal;
-    list-style-type: disc;
-    text-align: left;
-    transform: none;
-    transition: none;
+.choose-model {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.15rem 0.5rem;
+    padding: 0.6rem 0.8rem;
+    background: #fffaf5;
+    border: 1px solid rgba(126, 78, 50, 0.18);
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.choose-guide ul.choose-models li {
-    margin-bottom: 0.6rem;
+.choose-model:hover {
+    border-color: #A9704E;
+    box-shadow: 0 2px 8px rgba(126, 78, 50, 0.12);
 }
 
-.choose-guide ul a:link,
-.choose-guide ul a:visited {
+.choose-name {
+    align-self: baseline;
+    font-family: 'Fraunces', serif;
+    font-size: 1.05rem;
     color: #7E4E32;
-    text-decoration: underline;
 }
 
 .choose-price {
-    color: #7a5a44;
     font-size: 0.85rem;
+    color: #7a5a44;
+    align-self: baseline;
 }
 
-.choose-guide p {
-    margin: 0 0 0.5rem;
+.choose-desc {
+    grid-column: 1 / -1;
+    font-size: 0.8rem;
+    line-height: 1.45;
 }
 
-.choose-note {
+.choose-soon {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.68rem;
     font-style: italic;
-    margin-bottom: 0 !important;
+    color: #A9704E;
+    margin-left: 0.3rem;
+}
+
+.choose-ask {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.choose-currency {
+    color: #7a5a44;
+    font-size: 0.8rem;
 }
 
 @media only screen and (max-width: 600px) {
     .choose-guide {
         margin: 0 1rem 1.5rem;
-        padding: 1.25rem 1.25rem;
+        padding: 1rem;
+    }
+    .choose-models {
+        grid-template-columns: 1fr;
+        gap: 0.45rem;
     }
 }
