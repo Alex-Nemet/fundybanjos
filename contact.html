@@ -144,7 +144,7 @@
         } else if (type === 'driftwood') {
             enquirySelect.value = 'Driftwood waitlist';
         } else if (type === 'bespoke') {
-            enquirySelect.value = 'Bespoke waitlist';
+            enquirySelect.value = 'Custom waitlist';
         } else if (type === 'newsletter') {
             enquirySelect.value = 'Newsletter';
         }
@@ -164,7 +164,7 @@
         if (about && !messageField.value) {
             messageField.value = (type === 'custom'
                 ? "Hi Alex, I'm interested in a banjo like " + about.replace(/^The /, 'the ') + ". "
-                : about === 'Bespoke' ? "Hi Alex, I have a question about a bespoke build. "
+                : about === 'Custom' ? "Hi Alex, I have a question about a custom build. "
                 : "Hi Alex, I have a question about the " + about + ". ");
         }
 
@@ -223,7 +223,7 @@
                     <span class="choose-desc">The Tidal with upgraded woods and undercut frets</span>
                 </a>
                 <a class="choose-model" href="bespoke-banjo.html">
-                    <span class="choose-name">Bespoke</span><span class="choose-price">from $3,800 CAD<span class="choose-usd">about $2,700 USD</span></span>
+                    <span class="choose-name">Custom</span><span class="choose-price">from $3,800 CAD<span class="choose-usd">about $2,700 USD</span></span>
                     <span class="choose-desc">Fully custom, designed with you</span>
                 </a>
                 <a class="choose-model" href="driftwood-banjo.html">
@@ -268,7 +268,7 @@
                         <option value="Tidal waitlist">Tidal waitlist</option>
                         <option value="High Tide waitlist">High Tide waitlist</option>
                         <option value="Driftwood waitlist">Driftwood waitlist</option>
-                        <option value="Bespoke waitlist">Bespoke waitlist</option>
+                        <option value="Custom waitlist">Custom waitlist</option>
                         <option value="Newsletter">Newsletter / mailing list</option>
                     </select>
                 </div>
