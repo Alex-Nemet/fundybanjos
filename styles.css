@@ -2251,6 +2251,7 @@ header nav li {
 .choose-guide {
     flex: 1 0 100%;
     box-sizing: border-box;
+    margin-top: -3rem;  /* pull up under the heading so the space above matches the 3rem gap below */
     padding: 1.25rem 1.5rem;
     background: #f5ece3;
     border: 1px solid rgba(126, 78, 50, 0.15);
@@ -2334,6 +2335,7 @@ header nav li {
 @media only screen and (max-width: 600px) {
     .choose-guide {
         padding: 1rem;
+        margin-bottom: -1.5rem;  /* the photo column below has 1.5rem of its own padding */
     }
     .choose-models {
         grid-template-columns: 1fr;
