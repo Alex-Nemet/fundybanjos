@@ -2373,3 +2373,72 @@ header nav li {
         gap: 0.45rem;
     }
 }
+
+/* Model pages: give the price room above it and a little more size so it stands out from the text */
+.product-body + .model-price {
+    margin: 1.75rem 0 0.75rem;
+}
+
+.product-body + .model-price .price-amount,
+.product-price-block .price-amount {
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+.product-body + .model-price .price-usd,
+.product-price-block .price-usd {
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+/* Model pages: roomier, easier-to-read spec list (the cards on the Models page stay compact) */
+.product-detail .model-specs {
+    margin-top: 1.25rem;
+    padding-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.product-detail .model-specs li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(126, 78, 50, 0.12);
+    color: #3a2a1a;
+    line-height: 1.4;
+}
+
+.product-detail .model-specs li:last-child {
+    border-bottom: none;
+}
+
+.product-detail .model-specs li span:first-child {
+    min-width: 140px;
+    font-size: 0.78rem;
+    padding-top: 0.15rem;
+}
+
+/* Spec rows aren't links: don't let the site-wide nav hover zoom apply */
+.model-specs li:hover {
+    transform: none;
+}
+
+.product-detail .model-specs + * {
+    margin-top: 1.5rem;
+}
+
+/* The site-wide nav list styles (side margin, centring) squeeze the spec rows on phones */
+.product-detail .model-specs li {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    .product-detail {
+        padding: 1.75rem 1.5rem;
+    }
+    .product-detail .model-specs li span:first-child {
+        min-width: 105px;
+        text-align: left;
+    }
+}
