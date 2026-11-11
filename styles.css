@@ -1117,6 +1117,15 @@ h1 {
     font-weight: 700;
   }
 
+  /* Rough US dollar figure for US visitors; CAD stays the real price.
+     Rounded up to the next $100 at about 0.71 USD per CAD (Nov 2026). */
+  .price-usd {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.8rem;
+    color: #7a5a44;
+    margin-bottom: 0.5rem;
+  }
+
   .model-availability {
     font-size: 0.8rem;
     color: #4a3020;
@@ -2312,6 +2321,12 @@ header nav li {
     grid-column: 1 / -1;
     font-size: 0.8rem;
     line-height: 1.45;
+}
+
+.choose-usd {
+    display: block;
+    text-align: right;
+    font-size: 0.72rem;
 }
 
 .choose-soon {
