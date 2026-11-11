@@ -2327,11 +2327,6 @@ header nav li {
     margin: 0;
 }
 
-.choose-currency {
-    color: #7a5a44;
-    font-size: 0.8rem;
-}
-
 @media only screen and (max-width: 600px) {
     .choose-guide {
         padding: 1rem;
