@@ -925,6 +925,12 @@ h1 {
     resize: vertical;
   }
 
+  /* A dropdown is as wide as its longest option; keep it inside the form on phones */
+  .form-group select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .form-group input:focus,
   .form-group textarea:focus,
   .form-group select:focus {
