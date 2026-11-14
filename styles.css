@@ -949,6 +949,35 @@ h1 {
     background-color: #5c3822;
   }
 
+  .contact-form button[type="submit"]:disabled {
+    opacity: 0.7;
+    cursor: wait;
+  }
+
+  .form-error {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #7a2e1a;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-left: 3px solid #7a2e1a;
+    padding: 0.6rem 0.8rem;
+    margin: 0;
+  }
+
+  .form-error[hidden] {
+    display: none;
+  }
+
+  /* Hidden spam trap: bots fill it in, people never see it */
+  .form-trap {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
    .testimonial {
     display: flex;
     flex-direction: column;

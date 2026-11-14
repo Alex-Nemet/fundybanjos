@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You | Fundy Banjos</title>
     <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="styles.css?v=2026-11-11b">
+    <link rel="stylesheet" href="styles.css?v=2026-11-14">
 </head>
 <body>
 
@@ -57,10 +57,20 @@
     <hr>
 
     <script src="index.js?v=2026-10-29"></script>
+    <script>
+    // Set by the contact form just before it sends people here.
+    try {
+        var thanksName = sessionStorage.getItem('enquiryName');
+        if (thanksName) document.getElementById('thanks-heading').textContent = 'Thanks for reaching out, ' + thanksName + '.';
+        if (sessionStorage.getItem('enquiryCopy')) document.getElementById('thanks-copy').hidden = false;
+    } catch (err) {}
+    </script>
 
     <div class="thank-you-section">
-        <h1 class="gallery_header">Thanks for reaching out.</h1>
-        <p>I'll be in touch soon, usually within a day or two. If you don't hear back in 2 days, please email <a href="mailto:fundybanjos@gmail.com">fundybanjos@gmail.com</a>.</p>
+        <h1 class="gallery_header" id="thanks-heading">Thanks for reaching out.</h1>
+        <p>I'll reply within a day or two, from fundybanjos@gmail.com.</p>
+        <p id="thanks-copy" hidden>I've also emailed you a copy of your message. If you can't find it, check your spam folder.</p>
+        <p>If you don't hear back in 2 days, please email <a href="mailto:fundybanjos@gmail.com">fundybanjos@gmail.com</a>.</p>
         <p class="enquire-cta"><a href="custom-banjo-gallery.html">Browse the Gallery &#8594;</a></p>
     </div>
 
