@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banjo Models | Tidal, High Tide & Custom | Canadian-Made | Fundy Banjos</title>
     <meta name="description" content="Canadian-made open-back banjos: the Tidal, High Tide and fully custom builds, handcrafted by Alex Nemet in the Annapolis Valley, Nova Scotia. Ships worldwide.">
-    <link rel="stylesheet" href="styles.css?v=2026-11-14b">
+    <link rel="stylesheet" href="styles.css?v=2026-11-23">
     <link rel="canonical" href="https://www.fundybanjos.com/banjo-models.html">
     <meta property="og:site_name" content="Fundy Banjos"/>
     <meta property="og:title" content="Banjo Models | Fundy Banjos Nova Scotia Canada"/>
@@ -153,7 +153,9 @@
 
         <!-- Custom -->
         <div class="model-card" data-href="bespoke-banjo.html">
-            <img src="img/walnut-moon/walnut-moon-5.webp" alt="Fundy Banjos custom banjo"/>
+            <div class="card-slideshow" data-slides="img/fireweed/fireweed-1.webp img/yew-banjo/yew-banjo-1.webp img/cathedral/cathedral-2.webp img/chanterelle/chanterelle-1.webp img/ebonized-banjo/ebonized-banjo-1.webp">
+                <img src="img/walnut-moon/walnut-moon-5.webp" alt="Fundy Banjos custom banjo"/>
+            </div>
             <div class="model-card-body">
                 <h2>Custom</h2>
                 <p class="model-tagline">Fully custom instruments developed individually with players. A one-off approach allowing exploration of materials, design, and sound.</p>
@@ -191,6 +193,36 @@
                 }
             });
         });
+
+        // Custom card: slowly crossfade through other custom headstocks.
+        // Extra photos load after the page; reduced-motion users see the first only.
+        (function () {
+            var show = document.querySelector('.card-slideshow');
+            if (!show || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+            window.addEventListener('load', function () {
+                var imgs = [show.querySelector('img')];
+                show.dataset.slides.split(' ').forEach(function (src) {
+                    var img = new Image();
+                    img.src = src;
+                    img.alt = '';
+                    img.setAttribute('aria-hidden', 'true');
+                    show.appendChild(img);
+                    imgs.push(img);
+                });
+                imgs[0].classList.add('is-shown');
+                show.classList.add('is-running');
+                var current = 0, z = 1;
+                setInterval(function () {
+                    var next = (current + 1) % imgs.length;
+                    if (document.hidden || !imgs[next].complete) return;
+                    var prev = imgs[current];
+                    imgs[next].style.zIndex = ++z;  // fade the next photo in on top
+                    imgs[next].classList.add('is-shown');
+                    setTimeout(function () { prev.classList.remove('is-shown'); }, 1600);
+                    current = next;
+                }, 4500);
+            });
+        })();
     </script>
 
     <footer class="footer">

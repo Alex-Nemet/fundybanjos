@@ -1084,6 +1084,27 @@ h1 {
     display: block;
   }
 
+  /* Custom card photo cycle (script in banjo-models.html) */
+  .card-slideshow {
+    position: relative;
+  }
+
+  .card-slideshow img {
+    position: relative;
+    transition: opacity 1.5s ease;
+  }
+
+  .card-slideshow img + img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  .card-slideshow.is-running img:not(.is-shown) {
+    opacity: 0;
+  }
+
   .model-card-body {
     padding: 1.5rem;
     display: flex;
