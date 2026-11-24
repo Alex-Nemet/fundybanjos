@@ -298,3 +298,60 @@ Hardware: Brass
 Inlay: Yellowheart
 Side dots: Yellowheart
 Finish: Nitrocellulose Lacquer
+
+---
+
+## The Fireweed Banjo
+Year: 2026
+
+One-line description:
+
+**Left column**
+Rim: 12" Walnut outside, Curly Maple inside
+Neck: Walnut
+Scale: 25.5"
+Fingerboard: Rosewood
+Scoop: S-Swoop Ogee (to confirm)
+Heel: Dobson
+Tone ring: Padauk
+Head: Renaissance
+
+**Right column**
+Headstock: Old Regal
+Tuners: Gotoh
+Tailpiece: No-Knot
+Strings: Medium Steel
+Hardware: Brass Rickard
+Inlay: Fireweed in Yellowheart
+Side dots: Yellowheart
+Finish: Oil Varnish
+
+---
+
+## The Cathedral Banjo
+Year: 2026
+
+One-line description:
+
+**Left column**
+Rim: 12" Ebonized Ash
+Neck: Ash
+Scale: 25.5"
+Fingerboard: Rosewood
+Scoop: Curved
+Scoop plate: Brass Etched
+Heel: Dobson
+Tone ring: Padauk
+Head: Renaissance
+
+**Right column**
+Headstock: Paddle
+Tuners: Rickard 10:1 (upgraded)
+Tailpiece: No-Knot
+Strings: Medium Steel
+Hardware: Antiqued Brass
+Inlay: Yellowheart (quatrefoils and cross)
+Side dots: Yellowheart
+Finish: Oil Varnish
+
+---
